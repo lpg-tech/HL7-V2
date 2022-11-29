@@ -20,6 +20,6 @@ comes here
 
 * Managment summarary, docx Template
 
-* Completet 1 June 2023
+* Completed 1 June 2023
 
 next video call 29 November 2022
