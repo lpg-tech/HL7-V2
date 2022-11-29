@@ -16,10 +16,10 @@ comes here
 
 ### Milestones
 
-* Begin 15. November 2022
+* Begin 15. November 2022, Github Repo, docx Template
 
-* Managment summarary, docx Template
+* 29 November 2022: Managment summarary, clean Github Repo. TODO: gender Segment, improve managment summary, why 2.9.1
 
 * Completed 1 June 2023
 
-next video call 29 November 2022
+next video call 23 December 2022 at 9:30
