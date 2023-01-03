@@ -20,6 +20,8 @@ comes here
 
 [Segment PID to Patient.fsh](https://github.com/HL7/v2-to-fhir/blob/master/input/fsh/Segment%20PID%20to%20Patient.fsh)
 
+[ConceptMap: Message ADT_A01 to Bundle Map](https://build.fhir.org/ig/HL7/v2-to-fhir/ConceptMap-message-adt-a01-to-bundle.html)
+
 [Message ADT_A08 to Bundle.fsh](https://github.com/HL7/v2-to-fhir/blob/master/input/fsh/Message%20ADT_A08%20to%20Bundle.fsh)
 
 ### Milestones
@@ -27,6 +29,8 @@ comes here
 * Begin 15. November 2022, Github Repo, docx Template
 
 * 29 November 2022: Managment summarary, clean Github Repo. TODO: gender Segment, improve managment summary, why 2.9.1
+
+* 3 January 2023: Further Improvement Managment summary. Create CSV Spreadsheet
 
 * Completed 1 June 2023
 
