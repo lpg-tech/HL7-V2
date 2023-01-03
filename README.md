@@ -1,5 +1,7 @@
 # HL7 Patientenschnittstelle V2.9
 
+HL7 Messaging Standard Version 2.9, alias V2.9
+
 ## Managment Summary
 
 comes here
@@ -13,6 +15,12 @@ comes here
 [HL7 Messaging Standard Version 2.9](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=516)
 
 [CH Core Patient](https://fhir.ch/ig/ch-core/StructureDefinition-ch-core-patient.html)
+
+[HL7 Version 2 to FHIR, 0.1.0 - CI Build](https://build.fhir.org/ig/HL7/v2-to-fhir/mapping_guidelines.html)
+
+[Segment PID to Patient.fsh](https://github.com/HL7/v2-to-fhir/blob/master/input/fsh/Segment%20PID%20to%20Patient.fsh)
+
+[Message ADT_A08 to Bundle.fsh](https://github.com/HL7/v2-to-fhir/blob/master/input/fsh/Message%20ADT_A08%20to%20Bundle.fsh)
 
 ### Milestones
 
