@@ -1,0 +1,118 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-hl70155-to-messageheader-response-request",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TableHL70155toMessageheaderResponseRequest (http://hl7.org/fhir/uv/v2mappings/table-hl70155-to-messageheader-response-request)</h2><p>Mapping from HL70155 to <a href=\"http://hl7.org/fhir/R4/codesystem-messageheader-response-request.html\">http://hl7.org/fhir/messageheader-response-request</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-21 by HL7 International, Inc (HL7 Orders and Observations Workgroup: <a href=\"http://hl7.org/Special/committees/orders/index.cfm\">http://hl7.org/Special/committ...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Table HL70155 to the FHIR Messageheader Response Request Value Set.</p>\n</div><br/><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td colspan=\"3\">Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></td></tr><tr><td>AL (Always)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>always</td></tr><tr><td>NE (Never)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>never</td></tr><tr><td>ER (Error/reject conditions only)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>on-error (Error/reject conditions only)</td></tr><tr><td>SU (Successful completion only)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>on-success (Successful completion only)</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        },
+        {
+          "url": "label",
+          "valueString": "Table HL70155 to Messageheader Response Request.fsh"
+        },
+        {
+          "url": "url",
+          "valueUri": "https://docs.google.com/spreadsheets/d/12TJrysXA2lpcnYd-2TRljHmjYxn8nzPUh1AYbM4IFxw/edit#gid=0"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/v2mappings/table-hl70155-to-messageheader-response-request",
+  "version": "0.1.0",
+  "name": "TableHL70155toMessageheaderResponseRequest",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-21",
+  "publisher": "HL7 International, Inc",
+  "contact": [
+    {
+      "name": "HL7 Orders and Observations Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This ConceptMap represents a mapping from the HL7 V2 Table HL70155 to the FHIR Messageheader Response Request Value Set.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri": "HL70155",
+  "targetUri": "http://hl7.org/fhir/messageheader-response-request",
+  "group": [
+    {
+      "element": [
+        {
+          "code": "AL",
+          "display": "Always",
+          "target": [
+            {
+              "code": "always",
+              "display": "Always",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NE",
+          "display": "Never",
+          "target": [
+            {
+              "code": "never",
+              "display": "Never",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ER",
+          "display": "Error/reject conditions only",
+          "target": [
+            {
+              "code": "on-error",
+              "display": "Error/reject conditions only",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SU",
+          "display": "Successful completion only",
+          "target": [
+            {
+              "code": "on-success",
+              "display": "Successful completion only",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

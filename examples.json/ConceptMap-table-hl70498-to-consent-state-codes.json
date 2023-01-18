@@ -1,0 +1,138 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-hl70498-to-consent-state-codes",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TableHL70498toConsentStateCodes (http://hl7.org/fhir/uv/v2mappings/table-hl70498-to-consent-state-codes)</h2><p>Mapping from HL70498 to <a href=\"http://hl7.org/fhir/R4/codesystem-consent-state-codes.html\">http://hl7.org/fhir/consent-state-codes</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-21 by HL7 International, Inc (HL7 Orders and Observations Workgroup: <a href=\"http://hl7.org/Special/committees/orders/index.cfm\">http://hl7.org/Special/committ...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Table HL70498 to the FHIR Consent State Codes Value Set.</p>\n</div><br/><table class=\"grid\"><tr><td colspan=\"2\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Destination Concept Details</b></td></tr><tr><td colspan=\"2\"><b>Code</b> from </td><td/><td colspan=\"2\"><b>Code</b> from </td></tr><tr><td style=\"border-right-width: 0px\">A</td><td style=\"border-left-width: 0px\">Active – Consent has been granted</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">active</td><td style=\"border-left-width: 0px\">Active</td></tr><tr><td style=\"border-right-width: 0px\">L</td><td style=\"border-left-width: 0px\">Limited – Consent has been granted with limitations</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">active</td><td style=\"border-left-width: 0px\">Active</td></tr><tr><td style=\"border-right-width: 0px\">R</td><td style=\"border-left-width: 0px\">Refused – Consent has been refused</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">rejected</td><td style=\"border-left-width: 0px\">Rejected</td></tr><tr><td style=\"border-right-width: 0px\">P</td><td style=\"border-left-width: 0px\">Pending – Consent has not yet been sought</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">proposed</td><td style=\"border-left-width: 0px\">Proposed</td></tr><tr><td style=\"border-right-width: 0px\">X</td><td style=\"border-left-width: 0px\">Rescinded – Consent was initially granted, but was subsequently revoked or ended.</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">inactive</td><td style=\"border-left-width: 0px\">Inactivated</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">B</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        },
+        {
+          "url": "label",
+          "valueString": "Table HL70498 to Consent State Codes.fsh"
+        },
+        {
+          "url": "url",
+          "valueUri": "https://docs.google.com/spreadsheets/d/1Jxs_J6VkV_KCScPUjbEjpzjgP15tjxPpbpXJQmvIZxs/edit#gid=0"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/v2mappings/table-hl70498-to-consent-state-codes",
+  "version": "0.1.0",
+  "name": "TableHL70498toConsentStateCodes",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-21",
+  "publisher": "HL7 International, Inc",
+  "contact": [
+    {
+      "name": "HL7 Orders and Observations Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This ConceptMap represents a mapping from the HL7 V2 Table HL70498 to the FHIR Consent State Codes Value Set.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri": "HL70498",
+  "targetUri": "http://hl7.org/fhir/consent-state-codes",
+  "group": [
+    {
+      "element": [
+        {
+          "code": "A",
+          "display": "Active – Consent has been granted",
+          "target": [
+            {
+              "code": "active",
+              "display": "Active",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "L",
+          "display": "Limited – Consent has been granted with limitations",
+          "target": [
+            {
+              "code": "active",
+              "display": "Active",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R",
+          "display": "Refused – Consent has been refused",
+          "target": [
+            {
+              "code": "rejected",
+              "display": "Rejected",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "P",
+          "display": "Pending – Consent has not yet been sought",
+          "target": [
+            {
+              "code": "proposed",
+              "display": "Proposed",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "X",
+          "display": "Rescinded – Consent was initially granted, but was subsequently revoked or ended.",
+          "target": [
+            {
+              "code": "inactive",
+              "display": "Inactivated",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "B",
+          "display": "Bypassed (Consent not sought)",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

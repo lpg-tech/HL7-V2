@@ -1,0 +1,492 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-hl70063-to-v3-rolecode",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TableHL70063toV3RoleCode (http://hl7.org/fhir/uv/v2mappings/table-hl70063-to-v3-rolecode)</h2><p>Mapping from HL70063 to <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html\">http://terminology.hl7.org/CodeSystem/v3-RoleCode</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-21 by HL7 International, Inc (HL7 Orders and Observations Workgroup: <a href=\"http://hl7.org/Special/committees/orders/index.cfm\">http://hl7.org/Special/committ...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Table HL70063 to the FHIR V3 RoleCode Value Set.</p>\n</div><br/><table class=\"grid\"><tr><td colspan=\"2\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Destination Concept Details</b></td></tr><tr><td colspan=\"2\"><b>Code</b> from </td><td/><td colspan=\"2\"><b>Code</b> from </td></tr><tr><td style=\"border-right-width: 0px\">SEL</td><td style=\"border-left-width: 0px\">Self</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">ONESELF</td><td style=\"border-left-width: 0px\">self</td></tr><tr><td style=\"border-right-width: 0px\">SPO</td><td style=\"border-left-width: 0px\">Spouse</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">SPS</td><td style=\"border-left-width: 0px\">spouse</td></tr><tr><td style=\"border-right-width: 0px\">DOM</td><td style=\"border-left-width: 0px\">Life partner</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">SIGOTHR</td><td style=\"border-left-width: 0px\">significant other</td></tr><tr><td style=\"border-right-width: 0px\">CHD</td><td style=\"border-left-width: 0px\">Child</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">CHILD</td><td style=\"border-left-width: 0px\">child</td></tr><tr><td style=\"border-right-width: 0px\">GCH</td><td style=\"border-left-width: 0px\">Grandchild</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">GRNDCHILD</td><td style=\"border-left-width: 0px\">grandchild</td></tr><tr><td style=\"border-right-width: 0px\">NCH</td><td style=\"border-left-width: 0px\">Natural child</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">NCHILD</td><td style=\"border-left-width: 0px\">natural child</td></tr><tr><td style=\"border-right-width: 0px\">SCH</td><td style=\"border-left-width: 0px\">Stepchild</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">STPCHLD</td><td style=\"border-left-width: 0px\">step child</td></tr><tr><td style=\"border-right-width: 0px\">FCH</td><td style=\"border-left-width: 0px\">Foster child</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">CHLDFOST</td><td style=\"border-left-width: 0px\">foster child</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">DEP</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">WRD</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">PAR</td><td style=\"border-left-width: 0px\">Parent</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">PRN</td><td style=\"border-left-width: 0px\">parent</td></tr><tr><td style=\"border-right-width: 0px\">MTH</td><td style=\"border-left-width: 0px\">Mother</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">MTH</td><td style=\"border-left-width: 0px\">mother</td></tr><tr><td style=\"border-right-width: 0px\">FTH</td><td style=\"border-left-width: 0px\">Father</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">FTH</td><td style=\"border-left-width: 0px\">father</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">CGV</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">GRD</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">GRP</td><td style=\"border-left-width: 0px\">Grandparent</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">GRPRN</td><td style=\"border-left-width: 0px\">grandparent</td></tr><tr><td style=\"border-right-width: 0px\">EXF</td><td style=\"border-left-width: 0px\">Extended family</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">EXT</td><td style=\"border-left-width: 0px\">extended family member</td></tr><tr><td style=\"border-right-width: 0px\">SIB</td><td style=\"border-left-width: 0px\">Sibling</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">SIB</td><td style=\"border-left-width: 0px\">sibling</td></tr><tr><td style=\"border-right-width: 0px\">BRO</td><td style=\"border-left-width: 0px\">Brother</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">BRO</td><td style=\"border-left-width: 0px\">brother</td></tr><tr><td style=\"border-right-width: 0px\">SIS</td><td style=\"border-left-width: 0px\">Sister</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">SIS</td><td style=\"border-left-width: 0px\">sister</td></tr><tr><td style=\"border-right-width: 0px\">FND</td><td style=\"border-left-width: 0px\">Friend</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">FRND</td><td style=\"border-left-width: 0px\">unrelated friend</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">OAD</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">EME</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">EMR</td><td style=\"border-left-width: 0px\">Employer</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">E</td><td style=\"border-left-width: 0px\">Employer</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">ASC</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">EMC</td><td style=\"border-left-width: 0px\">Emergency contact</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">C</td><td style=\"border-left-width: 0px\">Emergency Contact</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">OWN</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TRA</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">MGR</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">NON</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">UNK</td><td style=\"border-left-width: 0px\">Unknown</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">U</td><td style=\"border-left-width: 0px\">Unknown</td></tr><tr><td style=\"border-right-width: 0px\">OTH</td><td style=\"border-left-width: 0px\">Other</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">O</td><td style=\"border-left-width: 0px\">Other</td></tr><tr><td style=\"border-right-width: 0px\">E</td><td style=\"border-left-width: 0px\">Employer</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">E</td><td style=\"border-left-width: 0px\">Employer</td></tr><tr><td style=\"border-right-width: 0px\">C</td><td style=\"border-left-width: 0px\">Emergency Contact</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">C</td><td style=\"border-left-width: 0px\">Emergency Contact</td></tr><tr><td style=\"border-right-width: 0px\">F</td><td style=\"border-left-width: 0px\">Federal Agency</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">F</td><td style=\"border-left-width: 0px\">Federal Agency</td></tr><tr><td style=\"border-right-width: 0px\">I</td><td style=\"border-left-width: 0px\">Insurance Company</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">I</td><td style=\"border-left-width: 0px\">Insurance Company</td></tr><tr><td style=\"border-right-width: 0px\">N</td><td style=\"border-left-width: 0px\">Next-of-Kin</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">N</td><td style=\"border-left-width: 0px\">Next-of-Kin</td></tr><tr><td style=\"border-right-width: 0px\">S</td><td style=\"border-left-width: 0px\">State Agency</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">S</td><td style=\"border-left-width: 0px\">State Agency</td></tr><tr><td style=\"border-right-width: 0px\">O</td><td style=\"border-left-width: 0px\">Other</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">O</td><td style=\"border-left-width: 0px\">Other</td></tr><tr><td style=\"border-right-width: 0px\">U</td><td style=\"border-left-width: 0px\">Unknown</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">U</td><td style=\"border-left-width: 0px\">Unknown</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        },
+        {
+          "url": "label",
+          "valueString": "Table HL70063 to V3 RoleCode.fsh"
+        },
+        {
+          "url": "url",
+          "valueUri": "https://docs.google.com/spreadsheets/d/1BDbtJ9kKKpDXIG8GAaRyqpb_iUKBaaU4b0bcxHo0KoI/edit#gid=0"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/v2mappings/table-hl70063-to-v3-rolecode",
+  "version": "0.1.0",
+  "name": "TableHL70063toV3RoleCode",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-21",
+  "publisher": "HL7 International, Inc",
+  "contact": [
+    {
+      "name": "HL7 Orders and Observations Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This ConceptMap represents a mapping from the HL7 V2 Table HL70063 to the FHIR V3 RoleCode Value Set.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri": "HL70063",
+  "targetUri": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+  "group": [
+    {
+      "element": [
+        {
+          "code": "SEL",
+          "display": "Self",
+          "target": [
+            {
+              "code": "ONESELF",
+              "display": "self",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SPO",
+          "display": "Spouse",
+          "target": [
+            {
+              "code": "SPS",
+              "display": "spouse",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DOM",
+          "display": "Life partner",
+          "target": [
+            {
+              "code": "SIGOTHR",
+              "display": "significant other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CHD",
+          "display": "Child",
+          "target": [
+            {
+              "code": "CHILD",
+              "display": "child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GCH",
+          "display": "Grandchild",
+          "target": [
+            {
+              "code": "GRNDCHILD",
+              "display": "grandchild",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NCH",
+          "display": "Natural child",
+          "target": [
+            {
+              "code": "NCHILD",
+              "display": "natural child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SCH",
+          "display": "Stepchild",
+          "target": [
+            {
+              "code": "STPCHLD",
+              "display": "step child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FCH",
+          "display": "Foster child",
+          "target": [
+            {
+              "code": "CHLDFOST",
+              "display": "foster child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DEP",
+          "display": "Handicapped dependent",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "WRD",
+          "display": "Ward of court",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "PAR",
+          "display": "Parent",
+          "target": [
+            {
+              "code": "PRN",
+              "display": "parent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MTH",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "MTH",
+              "display": "mother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FTH",
+          "display": "Father",
+          "target": [
+            {
+              "code": "FTH",
+              "display": "father",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CGV",
+          "display": "Care giver",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "GRD",
+          "display": "Guardian",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "GRP",
+          "display": "Grandparent",
+          "target": [
+            {
+              "code": "GRPRN",
+              "display": "grandparent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "EXF",
+          "display": "Extended family",
+          "target": [
+            {
+              "code": "EXT",
+              "display": "extended family member",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SIB",
+          "display": "Sibling",
+          "target": [
+            {
+              "code": "SIB",
+              "display": "sibling",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BRO",
+          "display": "Brother",
+          "target": [
+            {
+              "code": "BRO",
+              "display": "brother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SIS",
+          "display": "Sister",
+          "target": [
+            {
+              "code": "SIS",
+              "display": "sister",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FND",
+          "display": "Friend",
+          "target": [
+            {
+              "code": "FRND",
+              "display": "unrelated friend",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OAD",
+          "display": "Other adult",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "EME",
+          "display": "Employee",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "EMR",
+          "display": "Employer",
+          "target": [
+            {
+              "code": "E",
+              "display": "Employer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ASC",
+          "display": "Associate",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "EMC",
+          "display": "Emergency contact",
+          "target": [
+            {
+              "code": "C",
+              "display": "Emergency Contact",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OWN",
+          "display": "Owner",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "TRA",
+          "display": "Trainer",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "MGR",
+          "display": "Manager",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "NON",
+          "display": "None",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "UNK",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "U",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OTH",
+          "display": "Other",
+          "target": [
+            {
+              "code": "O",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "E",
+          "display": "Employer",
+          "target": [
+            {
+              "code": "E",
+              "display": "Employer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "C",
+          "display": "Emergency Contact",
+          "target": [
+            {
+              "code": "C",
+              "display": "Emergency Contact",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "F",
+          "display": "Federal Agency",
+          "target": [
+            {
+              "code": "F",
+              "display": "Federal Agency",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "I",
+          "display": "Insurance Company",
+          "target": [
+            {
+              "code": "I",
+              "display": "Insurance Company",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "N",
+          "display": "Next-of-Kin",
+          "target": [
+            {
+              "code": "N",
+              "display": "Next-of-Kin",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "S",
+          "display": "State Agency",
+          "target": [
+            {
+              "code": "S",
+              "display": "State Agency",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "O",
+          "display": "Other",
+          "target": [
+            {
+              "code": "O",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "U",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "U",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

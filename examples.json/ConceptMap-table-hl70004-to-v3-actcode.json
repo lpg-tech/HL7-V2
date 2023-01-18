@@ -1,0 +1,164 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-hl70004-to-v3-actcode",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TableHL70004toV3ActCode (http://hl7.org/fhir/uv/v2mappings/table-hl70004-to-v3-actcode)</h2><p>Mapping from HL70004 to <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActCode.html\">http://terminology.hl7.org/CodeSystem/v3-ActCode</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-21 by HL7 International, Inc (HL7 Orders and Observations Workgroup: <a href=\"http://hl7.org/Special/committees/orders/index.cfm\">http://hl7.org/Special/committ...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Table HL70004 to the FHIR V3 ActCode Value Set.</p>\n</div><br/><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td colspan=\"3\">Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></td></tr><tr><td>E (Emergency)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>EMER</td></tr><tr><td>I (Inpatient)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>IMP</td></tr><tr><td>O (Outpatient)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>AMB</td></tr><tr><td>P (Preadmit)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>PRENC</td></tr><tr><td>R (Recurring patient)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>R</td></tr><tr><td>B (Obstetrics)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>B</td></tr><tr><td>C (Commercial Account)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>C</td></tr><tr><td>N (Not Applicable)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>N</td></tr><tr><td>U (Unknown)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>U</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        },
+        {
+          "url": "label",
+          "valueString": "Table HL70004 to V3 ActCode.fsh"
+        },
+        {
+          "url": "url",
+          "valueUri": "https://docs.google.com/spreadsheets/d/1T8Q6rSolB8lh56sXr3SVZ6AAPQGqD8D0zCoxz2dzdkM/edit#gid=0"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/v2mappings/table-hl70004-to-v3-actcode",
+  "version": "0.1.0",
+  "name": "TableHL70004toV3ActCode",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-21",
+  "publisher": "HL7 International, Inc",
+  "contact": [
+    {
+      "name": "HL7 Orders and Observations Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This ConceptMap represents a mapping from the HL7 V2 Table HL70004 to the FHIR V3 ActCode Value Set.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri": "HL70004",
+  "targetUri": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+  "group": [
+    {
+      "element": [
+        {
+          "code": "E",
+          "display": "Emergency",
+          "target": [
+            {
+              "code": "EMER",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "I",
+          "display": "Inpatient",
+          "target": [
+            {
+              "code": "IMP",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "O",
+          "display": "Outpatient",
+          "target": [
+            {
+              "code": "AMB",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "P",
+          "display": "Preadmit",
+          "target": [
+            {
+              "code": "PRENC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R",
+          "display": "Recurring patient",
+          "target": [
+            {
+              "code": "R",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "B",
+          "display": "Obstetrics",
+          "target": [
+            {
+              "code": "B",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "C",
+          "display": "Commercial Account",
+          "target": [
+            {
+              "code": "C",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "N",
+          "display": "Not Applicable",
+          "target": [
+            {
+              "code": "N",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "U",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "U",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

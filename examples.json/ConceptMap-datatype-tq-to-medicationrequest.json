@@ -1,0 +1,602 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "datatype-tq-to-medicationrequest",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DatatypeTQtoMedicationRequest (http://hl7.org/fhir/uv/v2mappings/datatype-tq-to-medicationrequest)</h2><p>Mapping from TQ to <a href=\"http://hl7.org/fhir/R4/medicationrequest.html\">MedicationRequest</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-21 by HL7 International, Inc (HL7 Orders and Observations Workgroup: <a href=\"http://hl7.org/Special/committees/orders/index.cfm\">http://hl7.org/Special/committ...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Datatype TQ to the FHIR MedicationRequest Resource.</p>\n</div><br/><table class=\"grid\"><tr><td colspan=\"5\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"3\"><b>Destination Concept Details</b></td></tr><tr><td colspan=\"2\"><b>Code</b> from </td><td><b>Code</b> from </td><td><b>Code</b> from </td><td><b>Code</b> from </td><td/><td colspan=\"2\"><b>Code</b> from </td><td><b>Code</b> from </td></tr><tr><td style=\"border-right-width: 0px\">TQ.1</td><td style=\"border-left-width: 0px\">Quantity</td><td>CQ[Quantity]</td><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">dosageInstruction.doseAndRate.doseQuantity</td><td style=\"border-left-width: 0px\">dosageInstruction.doseAndRate.doseQuantity</td><td/></tr><tr><td style=\"border-right-width: 0px\">TQ.2</td><td style=\"border-left-width: 0px\">Interval</td><td>RI[Timing]</td><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">dosageInstruction.doseAndRate.timing</td><td style=\"border-left-width: 0px\">dosageInstruction.doseAndRate.timing</td><td/></tr><tr><td style=\"border-right-width: 0px\">TQ.3</td><td style=\"border-left-width: 0px\">Duration</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">dosageInstruction.doseAndRate.timing.repeat.duration</td><td style=\"border-left-width: 0px\">dosageInstruction.doseAndRate.timing.repeat.duration</td><td>If the value and unit in TQ.3 can be unambiguously parsed where the unit is translatable into UCUM and the field contains nothing else.</td></tr><tr><td style=\"border-right-width: 0px\">TQ.3</td><td style=\"border-left-width: 0px\">Duration</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">occurenceTiming.repeat.boundsDuration.unit</td><td style=\"border-left-width: 0px\">occurenceTiming.repeat.boundsDuration.unit</td><td>If the value and unit in TQ.3 can be unambiguously parsed where the unit is translatable into UCUM and the field contains nothing else.</td></tr><tr><td style=\"border-right-width: 0px\">TQ.3</td><td style=\"border-left-width: 0px\">Duration</td><td/><td/><td>&quot;UCUM&quot;</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">occurenceTiming.repeat.boundsDuration.system</td><td style=\"border-left-width: 0px\">occurenceTiming.repeat.boundsDuration.system</td><td>If the value and unit in TQ.3 can be unambiguously parsed where the unit is translatable into UCUM and the field contains nothing else.</td></tr><tr><td style=\"border-right-width: 0px\">TQ.4</td><td style=\"border-left-width: 0px\">Start Date/Time</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">occurrenceTiming.repeat.boundsPeriod.start</td><td style=\"border-left-width: 0px\">occurrenceTiming.repeat.boundsPeriod.start</td><td/></tr><tr><td style=\"border-right-width: 0px\">TQ.5</td><td style=\"border-left-width: 0px\">End Date/Time</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">occurrenceTiming.repeat.boundsPeriod.end</td><td style=\"border-left-width: 0px\">occurrenceTiming.repeat.boundsPeriod.end</td><td/></tr><tr><td style=\"border-right-width: 0px\">TQ.6</td><td style=\"border-left-width: 0px\">Priority</td><td/><td>Priority</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">priority</td><td style=\"border-left-width: 0px\">priority</td><td/></tr><tr><td style=\"border-right-width: 0px\">TQ.8</td><td style=\"border-left-width: 0px\">Text</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">note(Annotation.text)</td><td style=\"border-left-width: 0px\">note(Annotation.text)</td><td/></tr><tr><td style=\"border-right-width: 0px\">TQ.12</td><td style=\"border-left-width: 0px\">Total Occurrences</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">occurrenceTiming.repeat.count</td><td style=\"border-left-width: 0px\">occurrenceTiming.repeat.count</td><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        },
+        {
+          "url": "label",
+          "valueString": "Datatype TQ to MedicationRequest.fsh"
+        },
+        {
+          "url": "url",
+          "valueUri": "https://docs.google.com/spreadsheets/d/1lAit5IsCkpdWAJarDdkr2obW-dnabpOPwYos72ac8FY/edit#gid=0"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/v2mappings/datatype-tq-to-medicationrequest",
+  "version": "0.1.0",
+  "name": "DatatypeTQtoMedicationRequest",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-21",
+  "publisher": "HL7 International, Inc",
+  "contact": [
+    {
+      "name": "HL7 Orders and Observations Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This ConceptMap represents a mapping from the HL7 V2 Datatype TQ to the FHIR MedicationRequest Resource.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri": "TQ",
+  "targetUri": "MedicationRequest",
+  "group": [
+    {
+      "element": [
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "type",
+                  "valueCode": "CQ"
+                },
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "TQ.1",
+          "display": "Quantity",
+          "target": [
+            {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "type",
+                      "valueCode": "simpleQuantity"
+                    },
+                    {
+                      "url": "cardinalityMin",
+                      "valueInteger": 1
+                    },
+                    {
+                      "url": "cardinalityMax",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+                }
+              ],
+              "code": "dosageInstruction.doseAndRate.doseQuantity",
+              "display": "dosageInstruction.doseAndRate.doseQuantity",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "data-type-map",
+                  "value": "CQ[Quantity]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "type",
+                  "valueCode": "RI"
+                },
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "TQ.2",
+          "display": "Interval",
+          "target": [
+            {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "type",
+                      "valueCode": "Timing"
+                    },
+                    {
+                      "url": "cardinalityMin",
+                      "valueInteger": 1
+                    },
+                    {
+                      "url": "cardinalityMax",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+                }
+              ],
+              "code": "dosageInstruction.doseAndRate.timing",
+              "display": "dosageInstruction.doseAndRate.timing",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "data-type-map",
+                  "value": "RI[Timing]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "type",
+                  "valueCode": "ST"
+                },
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "TQ.3",
+          "display": "Duration",
+          "target": [
+            {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "type",
+                      "valueCode": "decimal"
+                    },
+                    {
+                      "url": "cardinalityMin",
+                      "valueInteger": 1
+                    },
+                    {
+                      "url": "cardinalityMax",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+                }
+              ],
+              "code": "dosageInstruction.doseAndRate.timing.repeat.duration",
+              "display": "dosageInstruction.doseAndRate.timing.repeat.duration",
+              "equivalence": "equivalent",
+              "product": [
+                {
+                  "property": "narrative",
+                  "value": "If the value and unit in TQ.3 can be unambiguously parsed where the unit is translatable into UCUM and the field contains nothing else."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "type",
+                  "valueCode": "ST"
+                },
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "TQ.3",
+          "display": "Duration",
+          "target": [
+            {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "type",
+                      "valueCode": "string"
+                    },
+                    {
+                      "url": "cardinalityMin",
+                      "valueInteger": 1
+                    },
+                    {
+                      "url": "cardinalityMax",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+                }
+              ],
+              "code": "occurenceTiming.repeat.boundsDuration.unit",
+              "display": "occurenceTiming.repeat.boundsDuration.unit",
+              "equivalence": "equivalent",
+              "product": [
+                {
+                  "property": "narrative",
+                  "value": "If the value and unit in TQ.3 can be unambiguously parsed where the unit is translatable into UCUM and the field contains nothing else."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "type",
+                  "valueCode": "ST"
+                },
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "TQ.3",
+          "display": "Duration",
+          "target": [
+            {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "cardinalityMin",
+                      "valueInteger": 1
+                    },
+                    {
+                      "url": "cardinalityMax",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+                }
+              ],
+              "code": "occurenceTiming.repeat.boundsDuration.system",
+              "display": "occurenceTiming.repeat.boundsDuration.system",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "value",
+                  "value": "\"UCUM\""
+                }
+              ],
+              "product": [
+                {
+                  "property": "narrative",
+                  "value": "If the value and unit in TQ.3 can be unambiguously parsed where the unit is translatable into UCUM and the field contains nothing else."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "type",
+                  "valueCode": "TS"
+                },
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "TQ.4",
+          "display": "Start Date/Time",
+          "target": [
+            {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "type",
+                      "valueCode": "dateTime"
+                    },
+                    {
+                      "url": "cardinalityMin",
+                      "valueInteger": 1
+                    },
+                    {
+                      "url": "cardinalityMax",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+                }
+              ],
+              "code": "occurrenceTiming.repeat.boundsPeriod.start",
+              "display": "occurrenceTiming.repeat.boundsPeriod.start",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "type",
+                  "valueCode": "TS"
+                },
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "TQ.5",
+          "display": "End Date/Time",
+          "target": [
+            {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "type",
+                      "valueCode": "dateTime"
+                    },
+                    {
+                      "url": "cardinalityMin",
+                      "valueInteger": 1
+                    },
+                    {
+                      "url": "cardinalityMax",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+                }
+              ],
+              "code": "occurrenceTiming.repeat.boundsPeriod.end",
+              "display": "occurrenceTiming.repeat.boundsPeriod.end",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "type",
+                  "valueCode": "ST"
+                },
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "TQ.6",
+          "display": "Priority",
+          "target": [
+            {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "type",
+                      "valueCode": "code"
+                    },
+                    {
+                      "url": "cardinalityMin",
+                      "valueInteger": 1
+                    },
+                    {
+                      "url": "cardinalityMax",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+                }
+              ],
+              "code": "priority",
+              "display": "priority",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "vocabulary-map",
+                  "value": "Priority"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "type",
+                  "valueCode": "TX"
+                },
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "TQ.8",
+          "display": "Text",
+          "target": [
+            {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "type",
+                      "valueCode": "Reference(Annotation)"
+                    },
+                    {
+                      "url": "cardinalityMin",
+                      "valueInteger": -1
+                    },
+                    {
+                      "url": "cardinalityMax",
+                      "valueInteger": -1
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+                }
+              ],
+              "code": "note(Annotation.text)",
+              "display": "note(Annotation.text)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "type",
+                  "valueCode": "NM"
+                },
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "TQ.12",
+          "display": "Total Occurrences",
+          "target": [
+            {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "type",
+                      "valueCode": "positiveInt"
+                    },
+                    {
+                      "url": "cardinalityMin",
+                      "valueInteger": 1
+                    },
+                    {
+                      "url": "cardinalityMax",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+                }
+              ],
+              "code": "occurrenceTiming.repeat.count",
+              "display": "occurrenceTiming.repeat.count",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1418 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "message-oml-o21-to-bundle",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MessageOML_O21toBundle (http://hl7.org/fhir/uv/v2mappings/message-oml-o21-to-bundle)</h2><p>Mapping from OML_O21 to <a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-21 by HL7 International, Inc (HL7 Orders and Observations Workgroup: <a href=\"http://hl7.org/Special/committees/orders/index.cfm\">http://hl7.org/Special/committ...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Message OML_O21 to the FHIR Message Bundle.</p>\n</div><br/><table class=\"grid\"><tr><td colspan=\"4\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"5\"><b>Destination Concept Details</b></td><td><b>Comment</b></td></tr><tr><td colspan=\"2\"><b>Code</b> from </td><td><b>Code</b> from </td><td><b>Code</b> from </td><td/><td colspan=\"2\"><b>Code</b> from </td><td><b>Code</b> from </td><td><b>Code</b> from </td><td><b>Code</b> from </td><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.MSH</td><td style=\"border-left-width: 0px\">Message Header</td><td>MSH[Bundle]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Bundle</td><td style=\"border-left-width: 0px\">Bundle</td><td/><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.MSH</td><td style=\"border-left-width: 0px\">Message Header</td><td>MSH[MessageHeader]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">MessageHeader[1]</td><td style=\"border-left-width: 0px\">MessageHeader[1]</td><td/><td/><td/><td>Processing of the MSH segment results in the creation of a new MessageHeader resource</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.MSH</td><td style=\"border-left-width: 0px\">Message Header</td><td>MSH[Provenance]</td><td>Provenance.target=Bundle; Provenance.target=MessageHeader[MSH]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Provenance[1]</td><td style=\"border-left-width: 0px\">Provenance[1]</td><td/><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.SFT</td><td style=\"border-left-width: 0px\">Software</td><td>SFT[MessageHeader]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">MessageHeader[1]</td><td style=\"border-left-width: 0px\">MessageHeader[1]</td><td/><td/><td/><td>Incorporate SFT content for each of the SFT instances into the MessageHeader created from the MSH segment.</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.PATIENT.PID</td><td style=\"border-left-width: 0px\">Patient Identification</td><td>PID[Patient]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Patient[1]</td><td style=\"border-left-width: 0px\">Patient[1]</td><td/><td/><td/><td>Processing of the PID segment results in the creation of a new Patient resource</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.PATIENT.PID</td><td style=\"border-left-width: 0px\">Patient Identification</td><td>PID[Provenance]</td><td>Provenance.target.reference=Patient[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Provenance[4]</td><td style=\"border-left-width: 0px\">Provenance[4]</td><td>IF PID-33 AND PID-34 VALUED</td><td>One  may drop PID-33 from the condition if PID-34 Last Update Facility is still sufficient without a date.</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.PATIENT.PD1</td><td style=\"border-left-width: 0px\">Additional Demographics</td><td>PD1[Patient]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Patient[1]</td><td style=\"border-left-width: 0px\">Patient[1]</td><td/><td/><td/><td>Incorporate PD1 content into the Patient created from the PID segment.</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.PATIENT.PRT</td><td style=\"border-left-width: 0px\">Participation (for Patient)</td><td>PRT[PractitionerRole]</td><td>Patient[1].generalPractitioner.reference=PractitionerRole[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">PractitionerRole[1]</td><td style=\"border-left-width: 0px\">PractitionerRole[1]</td><td>IF PRT-4.1 EQUALS &quot;PP&quot; AND PRT-4.3 EQUALS &quot;HL70443&quot;</td><td/><td>(element(&quot;4.1&quot;)=&quot;PP&quot;)and(element(&quot;4.3&quot;)=&quot;HL70443&quot;)</td><td>Incorporate PRT content into the Patient created from the PID segment when the PRT contains practitioner related data.</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.PATIENT.PRT</td><td style=\"border-left-width: 0px\">Participation (for Patient)</td><td>PRT[RelatedPerson]</td><td>RelatedPerson[1].patient.reference=Patient[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">RelatedPerson[1]</td><td style=\"border-left-width: 0px\">RelatedPerson[1]</td><td>IF PRT-4.1 NOT EQUALS &quot;PP&quot; OR PRT-4.3 NOT EQUALS &quot;HL70443&quot;</td><td/><td>(element(&quot;4.1&quot;!)=&quot;PP&quot;)or(element(&quot;4.3&quot;)!=&quot;HL70443&quot;)</td><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.PATIENT.NK1</td><td style=\"border-left-width: 0px\">Next of Kin/Associated Parties</td><td>NK1[RelatedPerson]</td><td>RelatedPerson[2].patient.reference=Patient[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">RelatedPerson[2]</td><td style=\"border-left-width: 0px\">RelatedPerson[2]</td><td/><td>The FHIR location will depend on the nature of the data being exchanged and how the systems use next of kin data</td><td/><td>Typically, each NK1 will be translated to either a new RelatedPerson resource or added as a new occurrence of Patient.contact, but it's possible to insert the NK1 data into both structures.</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.PATIENT.NK1</td><td style=\"border-left-width: 0px\">Next of Kin/Associated Parties</td><td>NK1[Patient]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Patient[1]</td><td style=\"border-left-width: 0px\">Patient[1]</td><td/><td>The FHIR location will depend on the nature of the data being exchanged and how the systems use next of kin data</td><td/><td>Typically, each NK1 will be translated to either a new RelatedPerson resource or added as a new occurrence of Patient.contact, but it's possible to insert the NK1 data into both structures.</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.PATIENT.PATIENT_VISIT.PV1</td><td style=\"border-left-width: 0px\">Patient Visit</td><td>PV1[Encounter]</td><td>Encounter.subject=Patient[PID]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Encounter[1]</td><td style=\"border-left-width: 0px\">Encounter[1]</td><td/><td/><td/><td>Processing of the PV1 segment results in the creation of a new Encounter resource</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.PATIENT.PATIENT_VISIT.PV1</td><td style=\"border-left-width: 0px\">Patient Visit</td><td>PV1[Patient]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Patient[1]</td><td style=\"border-left-width: 0px\">Patient[1]</td><td/><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.PATIENT.PATIENT_VISIT.PV2</td><td style=\"border-left-width: 0px\">Patient Visit- Additional Info</td><td>PV2[Encounter]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Encounter[1]</td><td style=\"border-left-width: 0px\">Encounter[1]</td><td/><td/><td/><td>Incorporate PV2 content into the Encounter created from the PV1 segment.</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.PATIENT.PATIENT_VISIT.PRT</td><td style=\"border-left-width: 0px\">Participation (for Patient Visit)</td><td>PRT[PractitionerRole]</td><td>Encounter[1].participant.individual.reference=PractitionerRole[2].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">PractitionerRole[2]</td><td style=\"border-left-width: 0px\">PractitionerRole[2]</td><td/><td/><td/><td>Incorporate PRT content into the Encounter created from the PV1 segment.</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.PATIENT.INSURANCE.IN1</td><td style=\"border-left-width: 0px\">Insurance</td><td>IN1[Coverage]</td><td>Coverage.subscriber=Patient[PID]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Coverage[1]</td><td style=\"border-left-width: 0px\">Coverage[1]</td><td/><td/><td/><td>Processing of the IN1 segment results in the creation of a new Coverage resource</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.PATIENT.INSURANCE.IN2</td><td style=\"border-left-width: 0px\">Insurance Additional Information</td><td>IN2[Coverage]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Coverage[1]</td><td style=\"border-left-width: 0px\">Coverage[1]</td><td/><td/><td/><td>Incorporate IN2 content into the Coverage created from the IN1 segment.</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.PATIENT.INSURANCE.IN3</td><td style=\"border-left-width: 0px\">Insurance Additional Information, Certification</td><td>IN3[Coverage]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Coverage[1]</td><td style=\"border-left-width: 0px\">Coverage[1]</td><td/><td/><td/><td>Incorporate IN3 content into the Coverage created from the IN1 segment.</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.PATIENT.AL1</td><td style=\"border-left-width: 0px\">Allergy Information</td><td>AL1</td><td>AllergyIntolerance.patient=Patient[PID]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">AllergyIntolerance</td><td style=\"border-left-width: 0px\">AllergyIntolerance</td><td/><td/><td/><td>Processing of the AL1 segment results in the creation of a new AllergyIntolerance resource</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.ORC</td><td style=\"border-left-width: 0px\">Common Order</td><td>ORC[ServiceRequest]</td><td>ServiceRequest.subject=Patient[PID]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">ServiceRequest[1]</td><td style=\"border-left-width: 0px\">ServiceRequest[1]</td><td/><td/><td/><td>Processing of each ORC segment results in the creation of a new ServiceRequest resource</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.ORC</td><td style=\"border-left-width: 0px\">Common Order</td><td>ORC[Provenance]</td><td>Provenance.target=ServiceRequest[ORC]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Provenance[3]</td><td style=\"border-left-width: 0px\">Provenance[3]</td><td/><td/><td/><td>Using Provenance is the preferred way, but a local implementation may decide to add extensions to the main resource.  As the use and guidance of Provenance matures we wil revisit this later.</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.PRT</td><td style=\"border-left-width: 0px\">Participation (for Common Order)</td><td>PRT[PractitionerRole]</td><td>ServiceRequest[1].requester.reference=PractitionerRole[3].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">PractitionerRole[3]</td><td style=\"border-left-width: 0px\">PractitionerRole[3]</td><td>IF PRT-4.1 EQUALS &quot;OP&quot; AND PRT-4.3 EQUALS &quot;HL70443&quot;</td><td/><td>(element(&quot;4.1&quot;)=&quot;OP&quot;)and(element(&quot;4.3&quot;)=&quot;HL70443&quot;)</td><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.TIMING.TQ1</td><td style=\"border-left-width: 0px\">Timing/Quantity</td><td>TQ1[ServiceRequest]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">ServiceRequest[1]</td><td style=\"border-left-width: 0px\">ServiceRequest[1]</td><td/><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.TIMING.TQ2</td><td style=\"border-left-width: 0px\">Timing/Quantity Order Sequence</td><td>TQ2[ServiceRequest]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">ServiceRequest[1]</td><td style=\"border-left-width: 0px\">ServiceRequest[1]</td><td/><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.OBSERVATION_REQUEST.OBR</td><td style=\"border-left-width: 0px\">Observation Request</td><td>OBR[ServiceRequest]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">ServiceRequest[1]</td><td style=\"border-left-width: 0px\">ServiceRequest[1]</td><td/><td/><td/><td>Incorporate OBR content into the ServiceRequest created from the ORC segment in the same segment group.</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.OBSERVATION_REQUEST.OBR</td><td style=\"border-left-width: 0px\">Observation Request</td><td>OBR[Specimen]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Specimen[each]</td><td style=\"border-left-width: 0px\">Specimen[each]</td><td/><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.OBSERVATION_REQUEST.NTE</td><td style=\"border-left-width: 0px\">Notes and Comments (for Detail)</td><td>NTE[ServiceRequest]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">ServiceRequest[1]</td><td style=\"border-left-width: 0px\">ServiceRequest[1]</td><td/><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.OBSERVATION_REQUEST.PRT</td><td style=\"border-left-width: 0px\">Participation (for Observation Request)</td><td>PRT[PractitionerRole]</td><td>ServiceRequest[1].specimen[1](Specimen.collection.collector.reference)=PractitionerRole[4].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">PractitionerRole[4]</td><td style=\"border-left-width: 0px\">PractitionerRole[4]</td><td>IF PRT-4.1 EQUALS &quot;SC&quot; AND PRT-4.3 EQUALS &quot;HL70443&quot;</td><td/><td>(element(&quot;4.1&quot;)=&quot;SC&quot;)and(element(&quot;4.3&quot;)=&quot;HL70443&quot;)</td><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.OBSERVATION_REQUEST.PRT</td><td style=\"border-left-width: 0px\">Participation (for Observation Request)</td><td>PRT[PractitionerRole]</td><td>ServiceRequest[1].requester.reference=PractitionerRole[3].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">PractitionerRole[3]</td><td style=\"border-left-width: 0px\">PractitionerRole[3]</td><td>IF PRT-4.1 EQUALS &quot;OP&quot; AND PRT-4.3 EQUALS &quot;HL70443&quot;</td><td/><td>(element(&quot;4.1&quot;)=&quot;OP&quot;)and(element(&quot;4.3&quot;)=&quot;HL70443&quot;)</td><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.OBSERVATION_REQUEST.DG1</td><td style=\"border-left-width: 0px\">Diagnosis</td><td>DG1[Condition]</td><td>ServiceRequest[1].reasonReference.reference=Condition[1].id; Condition[1].subject.reference=Patient[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Condition[1]</td><td style=\"border-left-width: 0px\">Condition[1]</td><td/><td/><td/><td>Processing of the DG1 segment results in the creation of a new Condition resource which is referenced in the ServiceRequest created by the ORC segment</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.OBSERVATION_REQUEST.OBSERVATION.OBX</td><td style=\"border-left-width: 0px\">Observation/Result</td><td>OBX[Observation]</td><td>ServiceRequest[1].supportingInfo.reference=Observation[1].id; Observation[1].subject.id=Patient[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Observation[1]</td><td style=\"border-left-width: 0px\">Observation[1]</td><td>IF OBX-29 IN (&quot;QST&quot;, &quot;SCI&quot;)</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.OBSERVATION_REQUEST.OBSERVATION.PRT</td><td style=\"border-left-width: 0px\">Participation (for OBX)</td><td>PRT[Device]</td><td>Observation[2].device.reference=Device.id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Device</td><td style=\"border-left-width: 0px\">Device</td><td>IF PRT-10 VALUED</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.OBSERVATION_REQUEST.OBSERVATION.PRT</td><td style=\"border-left-width: 0px\">Participation (for OBX)</td><td>PRT[Observation-Location]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Observation[2]</td><td style=\"border-left-width: 0px\">Observation[2]</td><td>IF PRT-9 VALUED OR IF PRT-14 VALUED</td><td/><td/><td>Incorporate PRT content into the Observation created from the OBX segment in the same segment group when it represents observation location information.</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.OBSERVATION_REQUEST.OBSERVATION.PRT</td><td style=\"border-left-width: 0px\">Participation (for OBX)</td><td>PRT[PractitionerRole]</td><td>Observation[2].performer.reference=PractitionerRole[7].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">PractitionerRole[7]</td><td style=\"border-left-width: 0px\">PractitionerRole[7]</td><td>IF PRT-5 VALUED</td><td/><td/><td>Incorporate PRT content into the Observation created from the OBX segment in the same segment group when it represents observation practitioner information.</td></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.OBSERVATION_REQUEST.OBSERVATION.NTE</td><td style=\"border-left-width: 0px\">Notes and Comments (for Results)</td><td>NTE[Observation]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Observation[1]</td><td style=\"border-left-width: 0px\">Observation[1]</td><td/><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OML_O21.ORDER.OBSERVATION_REQUEST.SPECIMEN.SPM</td><td style=\"border-left-width: 0px\">Specimen</td><td>SPM[Specimen]</td><td>ServiceRequest[1].specimen.reference=Specimen[SPM].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Specimen</td><td style=\"border-left-width: 0px\">Specimen</td><td/><td/><td/><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        },
+        {
+          "url": "label",
+          "valueString": "Message OML:O21 to Bundle.fsh"
+        },
+        {
+          "url": "url",
+          "valueUri": "https://docs.google.com/spreadsheets/d/1cSYLIXVfIjl7ib2DEGxD96LD9-YVJNQtKul5IwzJtts/edit#gid=0"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/v2mappings/message-oml-o21-to-bundle",
+  "version": "0.1.0",
+  "name": "MessageOML_O21toBundle",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-21",
+  "publisher": "HL7 International, Inc",
+  "contact": [
+    {
+      "name": "HL7 Orders and Observations Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This ConceptMap represents a mapping from the HL7 V2 Message OML_O21 to the FHIR Message Bundle.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri": "OML_O21",
+  "targetUri": "Bundle",
+  "group": [
+    {
+      "element": [
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.MSH",
+          "display": "Message Header",
+          "target": [
+            {
+              "code": "Bundle",
+              "display": "Bundle",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "MSH[Bundle]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.MSH",
+          "display": "Message Header",
+          "target": [
+            {
+              "code": "MessageHeader[1]",
+              "display": "MessageHeader[1]",
+              "equivalence": "equivalent",
+              "comment": "Processing of the MSH segment results in the creation of a new MessageHeader resource",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "MSH[MessageHeader]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.MSH",
+          "display": "Message Header",
+          "target": [
+            {
+              "code": "Provenance[1]",
+              "display": "Provenance[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "MSH[Provenance]"
+                },
+                {
+                  "property": "references",
+                  "value": "Provenance.target=Bundle; Provenance.target=MessageHeader[MSH]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.SFT",
+          "display": "Software",
+          "target": [
+            {
+              "code": "MessageHeader[1]",
+              "display": "MessageHeader[1]",
+              "equivalence": "equivalent",
+              "comment": "Incorporate SFT content for each of the SFT instances into the MessageHeader created from the MSH segment.",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "SFT[MessageHeader]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.PATIENT.PID",
+          "display": "Patient Identification",
+          "target": [
+            {
+              "code": "Patient[1]",
+              "display": "Patient[1]",
+              "equivalence": "equivalent",
+              "comment": "Processing of the PID segment results in the creation of a new Patient resource",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PID[Patient]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.PATIENT.PID",
+          "display": "Patient Identification",
+          "target": [
+            {
+              "code": "Provenance[4]",
+              "display": "Provenance[4]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PID[Provenance]"
+                },
+                {
+                  "property": "references",
+                  "value": "Provenance.target.reference=Patient[1].id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "antlr",
+                  "value": "IF PID-33 AND PID-34 VALUED"
+                },
+                {
+                  "property": "narrative",
+                  "value": "One  may drop PID-33 from the condition if PID-34 Last Update Facility is still sufficient without a date."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.PATIENT.PD1",
+          "display": "Additional Demographics",
+          "target": [
+            {
+              "code": "Patient[1]",
+              "display": "Patient[1]",
+              "equivalence": "equivalent",
+              "comment": "Incorporate PD1 content into the Patient created from the PID segment.",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PD1[Patient]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.PATIENT.PRT",
+          "display": "Participation (for Patient)",
+          "target": [
+            {
+              "code": "PractitionerRole[1]",
+              "display": "PractitionerRole[1]",
+              "equivalence": "equivalent",
+              "comment": "Incorporate PRT content into the Patient created from the PID segment when the PRT contains practitioner related data.",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PRT[PractitionerRole]"
+                },
+                {
+                  "property": "references",
+                  "value": "Patient[1].generalPractitioner.reference=PractitionerRole[1].id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "antlr",
+                  "value": "IF PRT-4.1 EQUALS \"PP\" AND PRT-4.3 EQUALS \"HL70443\""
+                },
+                {
+                  "property": "fhirpath",
+                  "value": "(element(\"4.1\")=\"PP\")and(element(\"4.3\")=\"HL70443\")"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.PATIENT.PRT",
+          "display": "Participation (for Patient)",
+          "target": [
+            {
+              "code": "RelatedPerson[1]",
+              "display": "RelatedPerson[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PRT[RelatedPerson]"
+                },
+                {
+                  "property": "references",
+                  "value": "RelatedPerson[1].patient.reference=Patient[1].id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "antlr",
+                  "value": "IF PRT-4.1 NOT EQUALS \"PP\" OR PRT-4.3 NOT EQUALS \"HL70443\""
+                },
+                {
+                  "property": "fhirpath",
+                  "value": "(element(\"4.1\"!)=\"PP\")or(element(\"4.3\")!=\"HL70443\")"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.PATIENT.NK1",
+          "display": "Next of Kin/Associated Parties",
+          "target": [
+            {
+              "code": "RelatedPerson[2]",
+              "display": "RelatedPerson[2]",
+              "equivalence": "equivalent",
+              "comment": "Typically, each NK1 will be translated to either a new RelatedPerson resource or added as a new occurrence of Patient.contact, but it's possible to insert the NK1 data into both structures.",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "NK1[RelatedPerson]"
+                },
+                {
+                  "property": "references",
+                  "value": "RelatedPerson[2].patient.reference=Patient[1].id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "narrative",
+                  "value": "The FHIR location will depend on the nature of the data being exchanged and how the systems use next of kin data"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.PATIENT.NK1",
+          "display": "Next of Kin/Associated Parties",
+          "target": [
+            {
+              "code": "Patient[1]",
+              "display": "Patient[1]",
+              "equivalence": "equivalent",
+              "comment": "Typically, each NK1 will be translated to either a new RelatedPerson resource or added as a new occurrence of Patient.contact, but it's possible to insert the NK1 data into both structures.",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "NK1[Patient]"
+                }
+              ],
+              "product": [
+                {
+                  "property": "narrative",
+                  "value": "The FHIR location will depend on the nature of the data being exchanged and how the systems use next of kin data"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.PATIENT.PATIENT_VISIT.PV1",
+          "display": "Patient Visit",
+          "target": [
+            {
+              "code": "Encounter[1]",
+              "display": "Encounter[1]",
+              "equivalence": "equivalent",
+              "comment": "Processing of the PV1 segment results in the creation of a new Encounter resource",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PV1[Encounter]"
+                },
+                {
+                  "property": "references",
+                  "value": "Encounter.subject=Patient[PID]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.PATIENT.PATIENT_VISIT.PV1",
+          "display": "Patient Visit",
+          "target": [
+            {
+              "code": "Patient[1]",
+              "display": "Patient[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PV1[Patient]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.PATIENT.PATIENT_VISIT.PV2",
+          "display": "Patient Visit- Additional Info",
+          "target": [
+            {
+              "code": "Encounter[1]",
+              "display": "Encounter[1]",
+              "equivalence": "equivalent",
+              "comment": "Incorporate PV2 content into the Encounter created from the PV1 segment.",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PV2[Encounter]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.PATIENT.PATIENT_VISIT.PRT",
+          "display": "Participation (for Patient Visit)",
+          "target": [
+            {
+              "code": "PractitionerRole[2]",
+              "display": "PractitionerRole[2]",
+              "equivalence": "equivalent",
+              "comment": "Incorporate PRT content into the Encounter created from the PV1 segment.",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PRT[PractitionerRole]"
+                },
+                {
+                  "property": "references",
+                  "value": "Encounter[1].participant.individual.reference=PractitionerRole[2].id"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.PATIENT.INSURANCE.IN1",
+          "display": "Insurance",
+          "target": [
+            {
+              "code": "Coverage[1]",
+              "display": "Coverage[1]",
+              "equivalence": "equivalent",
+              "comment": "Processing of the IN1 segment results in the creation of a new Coverage resource",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "IN1[Coverage]"
+                },
+                {
+                  "property": "references",
+                  "value": "Coverage.subscriber=Patient[PID]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.PATIENT.INSURANCE.IN2",
+          "display": "Insurance Additional Information",
+          "target": [
+            {
+              "code": "Coverage[1]",
+              "display": "Coverage[1]",
+              "equivalence": "equivalent",
+              "comment": "Incorporate IN2 content into the Coverage created from the IN1 segment.",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "IN2[Coverage]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.PATIENT.INSURANCE.IN3",
+          "display": "Insurance Additional Information, Certification",
+          "target": [
+            {
+              "code": "Coverage[1]",
+              "display": "Coverage[1]",
+              "equivalence": "equivalent",
+              "comment": "Incorporate IN3 content into the Coverage created from the IN1 segment.",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "IN3[Coverage]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.PATIENT.AL1",
+          "display": "Allergy Information",
+          "target": [
+            {
+              "code": "AllergyIntolerance",
+              "display": "AllergyIntolerance",
+              "equivalence": "equivalent",
+              "comment": "Processing of the AL1 segment results in the creation of a new AllergyIntolerance resource",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "AL1"
+                },
+                {
+                  "property": "references",
+                  "value": "AllergyIntolerance.patient=Patient[PID]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.ORC",
+          "display": "Common Order",
+          "target": [
+            {
+              "code": "ServiceRequest[1]",
+              "display": "ServiceRequest[1]",
+              "equivalence": "equivalent",
+              "comment": "Processing of each ORC segment results in the creation of a new ServiceRequest resource",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "ORC[ServiceRequest]"
+                },
+                {
+                  "property": "references",
+                  "value": "ServiceRequest.subject=Patient[PID]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.ORC",
+          "display": "Common Order",
+          "target": [
+            {
+              "code": "Provenance[3]",
+              "display": "Provenance[3]",
+              "equivalence": "equivalent",
+              "comment": "Using Provenance is the preferred way, but a local implementation may decide to add extensions to the main resource.  As the use and guidance of Provenance matures we wil revisit this later.",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "ORC[Provenance]"
+                },
+                {
+                  "property": "references",
+                  "value": "Provenance.target=ServiceRequest[ORC]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.PRT",
+          "display": "Participation (for Common Order)",
+          "target": [
+            {
+              "code": "PractitionerRole[3]",
+              "display": "PractitionerRole[3]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PRT[PractitionerRole]"
+                },
+                {
+                  "property": "references",
+                  "value": "ServiceRequest[1].requester.reference=PractitionerRole[3].id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "antlr",
+                  "value": "IF PRT-4.1 EQUALS \"OP\" AND PRT-4.3 EQUALS \"HL70443\""
+                },
+                {
+                  "property": "fhirpath",
+                  "value": "(element(\"4.1\")=\"OP\")and(element(\"4.3\")=\"HL70443\")"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.TIMING.TQ1",
+          "display": "Timing/Quantity",
+          "target": [
+            {
+              "code": "ServiceRequest[1]",
+              "display": "ServiceRequest[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "TQ1[ServiceRequest]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.TIMING.TQ2",
+          "display": "Timing/Quantity Order Sequence",
+          "target": [
+            {
+              "code": "ServiceRequest[1]",
+              "display": "ServiceRequest[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "TQ2[ServiceRequest]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.OBSERVATION_REQUEST.OBR",
+          "display": "Observation Request",
+          "target": [
+            {
+              "code": "ServiceRequest[1]",
+              "display": "ServiceRequest[1]",
+              "equivalence": "equivalent",
+              "comment": "Incorporate OBR content into the ServiceRequest created from the ORC segment in the same segment group.",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "OBR[ServiceRequest]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.OBSERVATION_REQUEST.OBR",
+          "display": "Observation Request",
+          "target": [
+            {
+              "code": "Specimen[each]",
+              "display": "Specimen[each]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "OBR[Specimen]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.OBSERVATION_REQUEST.NTE",
+          "display": "Notes and Comments (for Detail)",
+          "target": [
+            {
+              "code": "ServiceRequest[1]",
+              "display": "ServiceRequest[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "NTE[ServiceRequest]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.OBSERVATION_REQUEST.PRT",
+          "display": "Participation (for Observation Request)",
+          "target": [
+            {
+              "code": "PractitionerRole[4]",
+              "display": "PractitionerRole[4]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PRT[PractitionerRole]"
+                },
+                {
+                  "property": "references",
+                  "value": "ServiceRequest[1].specimen[1](Specimen.collection.collector.reference)=PractitionerRole[4].id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "antlr",
+                  "value": "IF PRT-4.1 EQUALS \"SC\" AND PRT-4.3 EQUALS \"HL70443\""
+                },
+                {
+                  "property": "fhirpath",
+                  "value": "(element(\"4.1\")=\"SC\")and(element(\"4.3\")=\"HL70443\")"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.OBSERVATION_REQUEST.PRT",
+          "display": "Participation (for Observation Request)",
+          "target": [
+            {
+              "code": "PractitionerRole[3]",
+              "display": "PractitionerRole[3]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PRT[PractitionerRole]"
+                },
+                {
+                  "property": "references",
+                  "value": "ServiceRequest[1].requester.reference=PractitionerRole[3].id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "antlr",
+                  "value": "IF PRT-4.1 EQUALS \"OP\" AND PRT-4.3 EQUALS \"HL70443\""
+                },
+                {
+                  "property": "fhirpath",
+                  "value": "(element(\"4.1\")=\"OP\")and(element(\"4.3\")=\"HL70443\")"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.OBSERVATION_REQUEST.DG1",
+          "display": "Diagnosis",
+          "target": [
+            {
+              "code": "Condition[1]",
+              "display": "Condition[1]",
+              "equivalence": "equivalent",
+              "comment": "Processing of the DG1 segment results in the creation of a new Condition resource which is referenced in the ServiceRequest created by the ORC segment",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "DG1[Condition]"
+                },
+                {
+                  "property": "references",
+                  "value": "ServiceRequest[1].reasonReference.reference=Condition[1].id; Condition[1].subject.reference=Patient[1].id"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.OBSERVATION_REQUEST.OBSERVATION.OBX",
+          "display": "Observation/Result",
+          "target": [
+            {
+              "code": "Observation[1]",
+              "display": "Observation[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "OBX[Observation]"
+                },
+                {
+                  "property": "references",
+                  "value": "ServiceRequest[1].supportingInfo.reference=Observation[1].id; Observation[1].subject.id=Patient[1].id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "antlr",
+                  "value": "IF OBX-29 IN (\"QST\", \"SCI\")"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.OBSERVATION_REQUEST.OBSERVATION.PRT",
+          "display": "Participation (for OBX)",
+          "target": [
+            {
+              "code": "Device",
+              "display": "Device",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PRT[Device]"
+                },
+                {
+                  "property": "references",
+                  "value": "Observation[2].device.reference=Device.id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "antlr",
+                  "value": "IF PRT-10 VALUED"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.OBSERVATION_REQUEST.OBSERVATION.PRT",
+          "display": "Participation (for OBX)",
+          "target": [
+            {
+              "code": "Observation[2]",
+              "display": "Observation[2]",
+              "equivalence": "equivalent",
+              "comment": "Incorporate PRT content into the Observation created from the OBX segment in the same segment group when it represents observation location information.",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PRT[Observation-Location]"
+                }
+              ],
+              "product": [
+                {
+                  "property": "antlr",
+                  "value": "IF PRT-9 VALUED OR IF PRT-14 VALUED"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.OBSERVATION_REQUEST.OBSERVATION.PRT",
+          "display": "Participation (for OBX)",
+          "target": [
+            {
+              "code": "PractitionerRole[7]",
+              "display": "PractitionerRole[7]",
+              "equivalence": "equivalent",
+              "comment": "Incorporate PRT content into the Observation created from the OBX segment in the same segment group when it represents observation practitioner information.",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PRT[PractitionerRole]"
+                },
+                {
+                  "property": "references",
+                  "value": "Observation[2].performer.reference=PractitionerRole[7].id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "antlr",
+                  "value": "IF PRT-5 VALUED"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.OBSERVATION_REQUEST.OBSERVATION.NTE",
+          "display": "Notes and Comments (for Results)",
+          "target": [
+            {
+              "code": "Observation[1]",
+              "display": "Observation[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "NTE[Observation]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "OML_O21.ORDER.OBSERVATION_REQUEST.SPECIMEN.SPM",
+          "display": "Specimen",
+          "target": [
+            {
+              "code": "Specimen",
+              "display": "Specimen",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "SPM[Specimen]"
+                },
+                {
+                  "property": "references",
+                  "value": "ServiceRequest[1].specimen.reference=Specimen[SPM].id"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

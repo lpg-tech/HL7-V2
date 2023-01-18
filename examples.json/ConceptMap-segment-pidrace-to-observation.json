@@ -1,0 +1,157 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "segment-pidrace-to-observation",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SegmentPIDRacetoObservation (http://hl7.org/fhir/uv/v2mappings/segment-pidrace-to-observation)</h2><p>Mapping from PID to <a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-21 by HL7 International, Inc (HL7 Orders and Observations Workgroup: <a href=\"http://hl7.org/Special/committees/orders/index.cfm\">http://hl7.org/Special/committ...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Segment PID to the FHIR Observation Resource.</p>\n</div><br/><table class=\"grid\"><tr><td colspan=\"4\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Destination Concept Details</b></td></tr><tr><td colspan=\"2\"><b>Code</b> from </td><td><b>Code</b> from </td><td><b>Code</b> from </td><td/><td colspan=\"2\"><b>Code</b> from </td></tr><tr><td style=\"border-right-width: 0px\">PID</td><td style=\"border-left-width: 0px\"></td><td/><td>Patient.id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">subject.reference</td><td style=\"border-left-width: 0px\">subject.reference</td></tr><tr><td style=\"border-right-width: 0px\">PID</td><td style=\"border-left-width: 0px\"></td><td/><td>&quot;final&quot;</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">status</td><td style=\"border-left-width: 0px\">status</td></tr><tr><td style=\"border-right-width: 0px\">PID-10</td><td style=\"border-left-width: 0px\">Race</td><td>CWE[CodeableConcept]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueCodeableConcept</td><td style=\"border-left-width: 0px\">valueCodeableConcept</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        },
+        {
+          "url": "label",
+          "valueString": "Segment PID[Race] to Observation.fsh"
+        },
+        {
+          "url": "url",
+          "valueUri": "https://docs.google.com/spreadsheets/d/1sYh9IqPN2_KBsQIjgMe83CZGUkdfWBu4Exo1C11VhLI/edit#gid=0"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/v2mappings/segment-pidrace-to-observation",
+  "version": "0.1.0",
+  "name": "SegmentPIDRacetoObservation",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-21",
+  "publisher": "HL7 International, Inc",
+  "contact": [
+    {
+      "name": "HL7 Orders and Observations Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This ConceptMap represents a mapping from the HL7 V2 Segment PID to the FHIR Observation Resource.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri": "PID",
+  "targetUri": "Observation",
+  "group": [
+    {
+      "element": [
+        {
+          "code": "PID",
+          "target": [
+            {
+              "code": "subject.reference",
+              "display": "subject.reference",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "value",
+                  "value": "Patient.id"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PID",
+          "target": [
+            {
+              "code": "status",
+              "display": "status",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "value",
+                  "value": "\"final\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "type",
+                  "valueCode": "CWE"
+                },
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": -1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "PID-10",
+          "display": "Race",
+          "target": [
+            {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "cardinalityMin",
+                      "valueInteger": 0
+                    },
+                    {
+                      "url": "cardinalityMax",
+                      "valueInteger": -1
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+                }
+              ],
+              "code": "valueCodeableConcept",
+              "display": "valueCodeableConcept",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "data-type-map",
+                  "value": "CWE[CodeableConcept]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

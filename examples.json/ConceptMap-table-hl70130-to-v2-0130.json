@@ -1,0 +1,118 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-hl70130-to-v2-0130",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TableHL70130toV20130 (http://hl7.org/fhir/uv/v2mappings/table-hl70130-to-v2-0130)</h2><p>Mapping from HL70130 to <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0130.html\">http://terminology.hl7.org/CodeSystem/v2-0130</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-21 by HL7 International, Inc (HL7 Orders and Observations Workgroup: <a href=\"http://hl7.org/Special/committees/orders/index.cfm\">http://hl7.org/Special/committ...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Table HL70130 to the FHIR V2 0130 Value Set.</p>\n</div><br/><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td colspan=\"3\">Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></td></tr><tr><td>TE (Teaching)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>TE (Teaching)</td></tr><tr><td>HO (Home)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>HO (Home)</td></tr><tr><td>MO (Mobile Unit)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>MO (Mobile Unit)</td></tr><tr><td>PH (Phone)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>PH (Phone)</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        },
+        {
+          "url": "label",
+          "valueString": "Table HL70130 to V2 0130.fsh"
+        },
+        {
+          "url": "url",
+          "valueUri": "https://docs.google.com/spreadsheets/d/11sSjJv_FutvNhkDs-S81ARyRj5_D1J2kPGEJATjhQWk/edit#gid=0"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/v2mappings/table-hl70130-to-v2-0130",
+  "version": "0.1.0",
+  "name": "TableHL70130toV20130",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-21",
+  "publisher": "HL7 International, Inc",
+  "contact": [
+    {
+      "name": "HL7 Orders and Observations Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This ConceptMap represents a mapping from the HL7 V2 Table HL70130 to the FHIR V2 0130 Value Set.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri": "HL70130",
+  "targetUri": "http://terminology.hl7.org/CodeSystem/v2-0130",
+  "group": [
+    {
+      "element": [
+        {
+          "code": "TE",
+          "display": "Teaching",
+          "target": [
+            {
+              "code": "TE",
+              "display": "Teaching",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HO",
+          "display": "Home",
+          "target": [
+            {
+              "code": "HO",
+              "display": "Home",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MO",
+          "display": "Mobile Unit",
+          "target": [
+            {
+              "code": "MO",
+              "display": "Mobile Unit",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PH",
+          "display": "Phone",
+          "target": [
+            {
+              "code": "PH",
+              "display": "Phone",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

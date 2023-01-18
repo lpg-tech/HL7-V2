@@ -1,0 +1,1106 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "message-adt-a08-to-bundle",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MessageADT_A08toBundle (http://hl7.org/fhir/uv/v2mappings/message-adt-a08-to-bundle)</h2><p>Mapping from ADT_A08 to <a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-21 by HL7 International, Inc (HL7 Orders and Observations Workgroup: <a href=\"http://hl7.org/Special/committees/orders/index.cfm\">http://hl7.org/Special/committ...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Message ADT_A08 to the FHIR Message Bundle.</p>\n</div><br/><table class=\"grid\"><tr><td colspan=\"4\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"5\"><b>Destination Concept Details</b></td></tr><tr><td colspan=\"2\"><b>Code</b> from </td><td><b>Code</b> from </td><td><b>Code</b> from </td><td/><td colspan=\"2\"><b>Code</b> from </td><td><b>Code</b> from </td><td><b>Code</b> from </td><td><b>Code</b> from </td></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.MSH</td><td style=\"border-left-width: 0px\">Message Header</td><td>MSH[Bundle]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Bundle</td><td style=\"border-left-width: 0px\">Bundle</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.MSH</td><td style=\"border-left-width: 0px\">Message Header</td><td>MSH[MessageHeader]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">MessageHeader[1]</td><td style=\"border-left-width: 0px\">MessageHeader[1]</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.MSH</td><td style=\"border-left-width: 0px\">Message Header</td><td>MSH[Provenance]</td><td>Provenance.target=Bundle; Provenance.target=MessageHeader[MSH]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Provenance[1]</td><td style=\"border-left-width: 0px\">Provenance[1]</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.SFT</td><td style=\"border-left-width: 0px\">Software Segment</td><td>SFT[MessageHeader]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">MessageHeader[1]</td><td style=\"border-left-width: 0px\">MessageHeader[1]</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.EVN</td><td style=\"border-left-width: 0px\">Event Type</td><td>EVN[Provenance]</td><td>Provenance.target=Bundle; Provenance.target=MessageHeader[MSH]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Provenance[2]</td><td style=\"border-left-width: 0px\">Provenance[2]</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.PID</td><td style=\"border-left-width: 0px\">Patient Identification</td><td>PID[Patient]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Patient[1]</td><td style=\"border-left-width: 0px\">Patient[1]</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.PD1</td><td style=\"border-left-width: 0px\">Additional Demographics</td><td>PD1[Patient]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Patient[1]</td><td style=\"border-left-width: 0px\">Patient[1]</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08:follow:PID.ARV</td><td style=\"border-left-width: 0px\">Access Restrictions</td><td>ARV</td><td>Resource=Patient[1]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Patient[1]</td><td style=\"border-left-width: 0px\">Patient[1]</td><td>IF ARV-1 IN (&quot;PID&quot;, &quot;PD1&quot;) AND ARV-3 NOT VALUED</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08:follow:PID.ROL</td><td style=\"border-left-width: 0px\">Role</td><td>ROL[Patient-PractitionerRole]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Patient[1]</td><td style=\"border-left-width: 0px\">Patient[1]</td><td>IF ROL-3.1 EQUALS &quot;PP&quot; AND ROL-3.3 EQUALS &quot;HL70443&quot;</td><td>(element(&quot;3.1&quot;)=&quot;PP&quot;)and(element(&quot;3.3&quot;)=&quot;HL70443&quot;)</td><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08:follow:PID.ROL</td><td style=\"border-left-width: 0px\">Role</td><td>ROL[RelatedPerson]</td><td>RelatedPerson[1].patient.reference=Patient[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">RelatedPerson[1]</td><td style=\"border-left-width: 0px\">RelatedPerson[1]</td><td>IF ROL-3.1 NOT EQUALS  &quot;PP&quot; OR ROL-3.3 NOT EQUALS &quot;HL70443&quot;</td><td>(element(&quot;3.1&quot;)!=&quot;PP&quot;)or(element(&quot;3.3&quot;)!=&quot;HL70443&quot;)</td><td>While most likely all other HL70443 values go to RelatedPerson, the implementation needs to determine whether that is fully accurate.</td></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.NEXT_OF_KIN.NK1</td><td style=\"border-left-width: 0px\">Next of Kin / Associated Parties</td><td>NK1[RelatedPerson]</td><td>RelatedPerson[2].patient.reference=Patient[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">RelatedPerson[2]</td><td style=\"border-left-width: 0px\">RelatedPerson[2]</td><td/><td/><td>The FHIR location will depend on the nature of the data being exchanged and how the systems use next of kin data</td></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.NEXT_OF_KIN.NK1</td><td style=\"border-left-width: 0px\">Next of Kin / Associated Parties</td><td>NK1[Patient]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Patient[1]</td><td style=\"border-left-width: 0px\">Patient[1]</td><td/><td/><td>The FHIR location will depend on the nature of the data being exchanged and how the systems use next of kin data</td></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.PV1</td><td style=\"border-left-width: 0px\">Patient Visit</td><td>PV1[Encounter]</td><td>Encounter[1].subject.reference=Patient[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Encounter[1]</td><td style=\"border-left-width: 0px\">Encounter[1]</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.PV1</td><td style=\"border-left-width: 0px\">Patient Visit</td><td>PV1[Patient]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Patient[1]</td><td style=\"border-left-width: 0px\">Patient[1]</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.PV2</td><td style=\"border-left-width: 0px\">Patient Visit - Additional Info.</td><td>PV2[Encounter]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Encounter[1]</td><td style=\"border-left-width: 0px\">Encounter[1]</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08:follow:PV1.ARV</td><td style=\"border-left-width: 0px\">Access Restrictions</td><td>ARV</td><td>Resource=Encounter[1]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Encounter[1]</td><td style=\"border-left-width: 0px\">Encounter[1]</td><td>IF ARV-1 IN (&quot;PV1&quot;, &quot;PV2&quot;) AND ARV-3 NOT VALUED</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08:follow:PV1.ROL</td><td style=\"border-left-width: 0px\">Role</td><td>ROL[Encounter-PractitionerRole]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Encounter[1]</td><td style=\"border-left-width: 0px\">Encounter[1]</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.OBSERVATION.OBX</td><td style=\"border-left-width: 0px\">Observation/Result</td><td>OBX[Observation]</td><td>Observation.subject.reference=Patient[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Observation</td><td style=\"border-left-width: 0px\">Observation</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.OBSERVATION.OBX</td><td style=\"border-left-width: 0px\">Observation/Result</td><td>OBX[Observation-Component]</td><td>Observation.subject.reference=Patient[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Observation</td><td style=\"border-left-width: 0px\">Observation</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.AL1</td><td style=\"border-left-width: 0px\">Allergy Information</td><td>AL1[AllergyIntolerance]</td><td>AllergyIntolerance.patient.reference=Patient[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">AllergyIntolerance</td><td style=\"border-left-width: 0px\">AllergyIntolerance</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.DG1</td><td style=\"border-left-width: 0px\">Diagnosis Information</td><td>DG1</td><td>Condition.subject.reference=Patient[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Condition</td><td style=\"border-left-width: 0px\">Condition</td><td/><td/><td>If in context of the patient</td></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.DG1</td><td style=\"border-left-width: 0px\">Diagnosis Information</td><td>DG1</td><td>Encounter[1].diagnosis.reference=Condition[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Encounter[1]</td><td style=\"border-left-width: 0px\">Encounter[1]</td><td>IF DG1-6 EQUALS &quot;admitting&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.DG1</td><td style=\"border-left-width: 0px\">Diagnosis Information</td><td>DG1</td><td>Encounter[1].diagnosis.reference=Condition[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Encounter[1]</td><td style=\"border-left-width: 0px\">Encounter[1]</td><td/><td/><td>If in context of an encounter</td></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.DG1</td><td style=\"border-left-width: 0px\">Diagnosis Information</td><td>DG1</td><td>EpisodeOfCare.diagnosis.reference=Condition[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">EpisodeOfCare[1]</td><td style=\"border-left-width: 0px\">EpisodeOfCare[1]</td><td/><td/><td>If in context of a episode of care</td></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.PROCEDURE.PR1</td><td style=\"border-left-width: 0px\">Procedures</td><td>PR1</td><td>Procedure.subject.reference=Patient[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Procedure</td><td style=\"border-left-width: 0px\">Procedure</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.INSURANCE.IN1</td><td style=\"border-left-width: 0px\">Insurance</td><td>IN1[Coverage]</td><td>Coverage.subscriber.reference=Patient[1].id</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Coverage[1]</td><td style=\"border-left-width: 0px\">Coverage[1]</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.INSURANCE.IN2</td><td style=\"border-left-width: 0px\">Insurance Additional Info.</td><td>IN2[Coverage]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Coverage[1]</td><td style=\"border-left-width: 0px\">Coverage[1]</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">ADT_A08.INSURANCE.IN3</td><td style=\"border-left-width: 0px\">Insurance Additional Info - Cert.</td><td>IN3[Coverage]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">Coverage[1]</td><td style=\"border-left-width: 0px\">Coverage[1]</td><td/><td/><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        },
+        {
+          "url": "label",
+          "valueString": "Message ADT:A08 to Bundle.fsh"
+        },
+        {
+          "url": "url",
+          "valueUri": "https://docs.google.com/spreadsheets/d/15kdP-Xk7kczgmINCDDLcNqQ5RXZltSmUMz6rO_Kv9zM/edit#gid=0"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/v2mappings/message-adt-a08-to-bundle",
+  "version": "0.1.0",
+  "name": "MessageADT_A08toBundle",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-21",
+  "publisher": "HL7 International, Inc",
+  "contact": [
+    {
+      "name": "HL7 Orders and Observations Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This ConceptMap represents a mapping from the HL7 V2 Message ADT_A08 to the FHIR Message Bundle.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri": "ADT_A08",
+  "targetUri": "Bundle",
+  "group": [
+    {
+      "element": [
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.MSH",
+          "display": "Message Header",
+          "target": [
+            {
+              "code": "Bundle",
+              "display": "Bundle",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "MSH[Bundle]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.MSH",
+          "display": "Message Header",
+          "target": [
+            {
+              "code": "MessageHeader[1]",
+              "display": "MessageHeader[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "MSH[MessageHeader]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.MSH",
+          "display": "Message Header",
+          "target": [
+            {
+              "code": "Provenance[1]",
+              "display": "Provenance[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "MSH[Provenance]"
+                },
+                {
+                  "property": "references",
+                  "value": "Provenance.target=Bundle; Provenance.target=MessageHeader[MSH]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.SFT",
+          "display": "Software Segment",
+          "target": [
+            {
+              "code": "MessageHeader[1]",
+              "display": "MessageHeader[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "SFT[MessageHeader]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.EVN",
+          "display": "Event Type",
+          "target": [
+            {
+              "code": "Provenance[2]",
+              "display": "Provenance[2]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "EVN[Provenance]"
+                },
+                {
+                  "property": "references",
+                  "value": "Provenance.target=Bundle; Provenance.target=MessageHeader[MSH]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.PID",
+          "display": "Patient Identification",
+          "target": [
+            {
+              "code": "Patient[1]",
+              "display": "Patient[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PID[Patient]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.PD1",
+          "display": "Additional Demographics",
+          "target": [
+            {
+              "code": "Patient[1]",
+              "display": "Patient[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PD1[Patient]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08:follow:PID.ARV",
+          "display": "Access Restrictions",
+          "target": [
+            {
+              "code": "Patient[1]",
+              "display": "Patient[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "ARV"
+                },
+                {
+                  "property": "references",
+                  "value": "Resource=Patient[1]"
+                }
+              ],
+              "product": [
+                {
+                  "property": "antlr",
+                  "value": "IF ARV-1 IN (\"PID\", \"PD1\") AND ARV-3 NOT VALUED"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08:follow:PID.ROL",
+          "display": "Role",
+          "target": [
+            {
+              "code": "Patient[1]",
+              "display": "Patient[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "ROL[Patient-PractitionerRole]"
+                }
+              ],
+              "product": [
+                {
+                  "property": "antlr",
+                  "value": "IF ROL-3.1 EQUALS \"PP\" AND ROL-3.3 EQUALS \"HL70443\""
+                },
+                {
+                  "property": "fhirpath",
+                  "value": "(element(\"3.1\")=\"PP\")and(element(\"3.3\")=\"HL70443\")"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08:follow:PID.ROL",
+          "display": "Role",
+          "target": [
+            {
+              "code": "RelatedPerson[1]",
+              "display": "RelatedPerson[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "ROL[RelatedPerson]"
+                },
+                {
+                  "property": "references",
+                  "value": "RelatedPerson[1].patient.reference=Patient[1].id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "antlr",
+                  "value": "IF ROL-3.1 NOT EQUALS  \"PP\" OR ROL-3.3 NOT EQUALS \"HL70443\""
+                },
+                {
+                  "property": "fhirpath",
+                  "value": "(element(\"3.1\")!=\"PP\")or(element(\"3.3\")!=\"HL70443\")"
+                },
+                {
+                  "property": "narrative",
+                  "value": "While most likely all other HL70443 values go to RelatedPerson, the implementation needs to determine whether that is fully accurate."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.NEXT_OF_KIN.NK1",
+          "display": "Next of Kin / Associated Parties",
+          "target": [
+            {
+              "code": "RelatedPerson[2]",
+              "display": "RelatedPerson[2]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "NK1[RelatedPerson]"
+                },
+                {
+                  "property": "references",
+                  "value": "RelatedPerson[2].patient.reference=Patient[1].id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "narrative",
+                  "value": "The FHIR location will depend on the nature of the data being exchanged and how the systems use next of kin data"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.NEXT_OF_KIN.NK1",
+          "display": "Next of Kin / Associated Parties",
+          "target": [
+            {
+              "code": "Patient[1]",
+              "display": "Patient[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "NK1[Patient]"
+                }
+              ],
+              "product": [
+                {
+                  "property": "narrative",
+                  "value": "The FHIR location will depend on the nature of the data being exchanged and how the systems use next of kin data"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.PV1",
+          "display": "Patient Visit",
+          "target": [
+            {
+              "code": "Encounter[1]",
+              "display": "Encounter[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PV1[Encounter]"
+                },
+                {
+                  "property": "references",
+                  "value": "Encounter[1].subject.reference=Patient[1].id"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.PV1",
+          "display": "Patient Visit",
+          "target": [
+            {
+              "code": "Patient[1]",
+              "display": "Patient[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PV1[Patient]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.PV2",
+          "display": "Patient Visit - Additional Info.",
+          "target": [
+            {
+              "code": "Encounter[1]",
+              "display": "Encounter[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PV2[Encounter]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08:follow:PV1.ARV",
+          "display": "Access Restrictions",
+          "target": [
+            {
+              "code": "Encounter[1]",
+              "display": "Encounter[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "ARV"
+                },
+                {
+                  "property": "references",
+                  "value": "Resource=Encounter[1]"
+                }
+              ],
+              "product": [
+                {
+                  "property": "antlr",
+                  "value": "IF ARV-1 IN (\"PV1\", \"PV2\") AND ARV-3 NOT VALUED"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08:follow:PV1.ROL",
+          "display": "Role",
+          "target": [
+            {
+              "code": "Encounter[1]",
+              "display": "Encounter[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "ROL[Encounter-PractitionerRole]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.OBSERVATION.OBX",
+          "display": "Observation/Result",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "OBX[Observation]"
+                },
+                {
+                  "property": "references",
+                  "value": "Observation.subject.reference=Patient[1].id"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.OBSERVATION.OBX",
+          "display": "Observation/Result",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "OBX[Observation-Component]"
+                },
+                {
+                  "property": "references",
+                  "value": "Observation.subject.reference=Patient[1].id"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.AL1",
+          "display": "Allergy Information",
+          "target": [
+            {
+              "code": "AllergyIntolerance",
+              "display": "AllergyIntolerance",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "AL1[AllergyIntolerance]"
+                },
+                {
+                  "property": "references",
+                  "value": "AllergyIntolerance.patient.reference=Patient[1].id"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.DG1",
+          "display": "Diagnosis Information",
+          "target": [
+            {
+              "code": "Condition",
+              "display": "Condition",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "DG1"
+                },
+                {
+                  "property": "references",
+                  "value": "Condition.subject.reference=Patient[1].id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "narrative",
+                  "value": "If in context of the patient"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.DG1",
+          "display": "Diagnosis Information",
+          "target": [
+            {
+              "code": "Encounter[1]",
+              "display": "Encounter[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "DG1"
+                },
+                {
+                  "property": "references",
+                  "value": "Encounter[1].diagnosis.reference=Condition[1].id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "antlr",
+                  "value": "IF DG1-6 EQUALS \"admitting\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.DG1",
+          "display": "Diagnosis Information",
+          "target": [
+            {
+              "code": "Encounter[1]",
+              "display": "Encounter[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "DG1"
+                },
+                {
+                  "property": "references",
+                  "value": "Encounter[1].diagnosis.reference=Condition[1].id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "narrative",
+                  "value": "If in context of an encounter"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.DG1",
+          "display": "Diagnosis Information",
+          "target": [
+            {
+              "code": "EpisodeOfCare[1]",
+              "display": "EpisodeOfCare[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "DG1"
+                },
+                {
+                  "property": "references",
+                  "value": "EpisodeOfCare.diagnosis.reference=Condition[1].id"
+                }
+              ],
+              "product": [
+                {
+                  "property": "narrative",
+                  "value": "If in context of a episode of care"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.PROCEDURE.PR1",
+          "display": "Procedures",
+          "target": [
+            {
+              "code": "Procedure",
+              "display": "Procedure",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "PR1"
+                },
+                {
+                  "property": "references",
+                  "value": "Procedure.subject.reference=Patient[1].id"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.INSURANCE.IN1",
+          "display": "Insurance",
+          "target": [
+            {
+              "code": "Coverage[1]",
+              "display": "Coverage[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "IN1[Coverage]"
+                },
+                {
+                  "property": "references",
+                  "value": "Coverage.subscriber.reference=Patient[1].id"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": 1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.INSURANCE.IN2",
+          "display": "Insurance Additional Info.",
+          "target": [
+            {
+              "code": "Coverage[1]",
+              "display": "Coverage[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "IN2[Coverage]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "cardinalityMin",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "cardinalityMax",
+                  "valueInteger": -1
+                }
+              ],
+              "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+            }
+          ],
+          "code": "ADT_A08.INSURANCE.IN3",
+          "display": "Insurance Additional Info - Cert.",
+          "target": [
+            {
+              "code": "Coverage[1]",
+              "display": "Coverage[1]",
+              "equivalence": "equivalent",
+              "dependsOn": [
+                {
+                  "property": "segment-map",
+                  "value": "IN3[Coverage]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

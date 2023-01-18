@@ -1,0 +1,250 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-hl70002-to-v3-maritalstatus",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TableHL70002toV3MaritalStatus (http://hl7.org/fhir/uv/v2mappings/table-hl70002-to-v3-maritalstatus)</h2><p>Mapping from HL70002 to <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html\">http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-21 by HL7 International, Inc (HL7 Orders and Observations Workgroup: <a href=\"http://hl7.org/Special/committees/orders/index.cfm\">http://hl7.org/Special/committ...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Table HL70002 to the FHIR V3 MaritalStatus Value Set.</p>\n</div><br/><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td colspan=\"3\">Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></td></tr><tr><td>A (Separated)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>L (Legally Separated)</td></tr><tr><td>D (Divorced)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>D (Divorced)</td></tr><tr><td>M (Married)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>M (Married)</td></tr><tr><td>S (Single)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>S (Never Married)</td></tr><tr><td>W (Widowed)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>W (Widowed)</td></tr><tr><td>C (Common law)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>C (Common Law)</td></tr><tr><td>G (Living together)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>T (Domestic partner)</td></tr><tr><td>P (Domestic partner)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>T (Domestic partner)</td></tr><tr><td>R (Registered domestic partner)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>T (Domestic partner)</td></tr><tr><td>E (Legally Separated)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>L (Legally Separated)</td></tr><tr><td>N (Annulled)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>A (Annulled)</td></tr><tr><td>I (Interlocutory)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>I (Interlocutory)</td></tr><tr><td>B (Unmarried)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>U (unmarried)</td></tr><tr><td>U (Unknown)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>UNK (Unknown)</td></tr><tr><td>O (Other)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>OTH (Other)</td></tr><tr><td>T (Unreported)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>NAVU (Not available)</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        },
+        {
+          "url": "label",
+          "valueString": "Table HL70002 to V3 MaritalStatus.fsh"
+        },
+        {
+          "url": "url",
+          "valueUri": "https://docs.google.com/spreadsheets/d/1HfYIHuf_CVC28fRhy3wgGSRZ5XtWKSERNNrcR45wSkA/edit#gid=0"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/v2mappings/table-hl70002-to-v3-maritalstatus",
+  "version": "0.1.0",
+  "name": "TableHL70002toV3MaritalStatus",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-21",
+  "publisher": "HL7 International, Inc",
+  "contact": [
+    {
+      "name": "HL7 Orders and Observations Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This ConceptMap represents a mapping from the HL7 V2 Table HL70002 to the FHIR V3 MaritalStatus Value Set.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri": "HL70002",
+  "targetUri": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+  "group": [
+    {
+      "element": [
+        {
+          "code": "A",
+          "display": "Separated",
+          "target": [
+            {
+              "code": "L",
+              "display": "Legally Separated",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "D",
+          "display": "Divorced",
+          "target": [
+            {
+              "code": "D",
+              "display": "Divorced",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "M",
+          "display": "Married",
+          "target": [
+            {
+              "code": "M",
+              "display": "Married",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "S",
+          "display": "Single",
+          "target": [
+            {
+              "code": "S",
+              "display": "Never Married",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "W",
+          "display": "Widowed",
+          "target": [
+            {
+              "code": "W",
+              "display": "Widowed",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "C",
+          "display": "Common law",
+          "target": [
+            {
+              "code": "C",
+              "display": "Common Law",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "G",
+          "display": "Living together",
+          "target": [
+            {
+              "code": "T",
+              "display": "Domestic partner",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "P",
+          "display": "Domestic partner",
+          "target": [
+            {
+              "code": "T",
+              "display": "Domestic partner",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R",
+          "display": "Registered domestic partner",
+          "target": [
+            {
+              "code": "T",
+              "display": "Domestic partner",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "E",
+          "display": "Legally Separated",
+          "target": [
+            {
+              "code": "L",
+              "display": "Legally Separated",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "N",
+          "display": "Annulled",
+          "target": [
+            {
+              "code": "A",
+              "display": "Annulled",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "I",
+          "display": "Interlocutory",
+          "target": [
+            {
+              "code": "I",
+              "display": "Interlocutory",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "B",
+          "display": "Unmarried",
+          "target": [
+            {
+              "code": "U",
+              "display": "unmarried",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "U",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "O",
+          "display": "Other",
+          "target": [
+            {
+              "code": "OTH",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "T",
+          "display": "Unreported",
+          "target": [
+            {
+              "code": "NAVU",
+              "display": "Not available",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

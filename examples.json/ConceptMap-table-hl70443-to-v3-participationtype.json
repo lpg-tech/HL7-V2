@@ -1,0 +1,293 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-hl70443-to-v3-participationtype",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TableHL70443toV3ParticipationType (http://hl7.org/fhir/uv/v2mappings/table-hl70443-to-v3-participationtype)</h2><p>Mapping from HL70443 to <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ParticipationType.html\">http://terminology.hl7.org/CodeSystem/v3-ParticipationType</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-21 by HL7 International, Inc (HL7 Orders and Observations Workgroup: <a href=\"http://hl7.org/Special/committees/orders/index.cfm\">http://hl7.org/Special/committ...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Table HL70443 to the FHIR V3 ParticipationType Value Set.</p>\n</div><br/><table class=\"grid\"><tr><td colspan=\"2\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Destination Concept Details</b></td></tr><tr><td colspan=\"2\"><b>Code</b> from </td><td/><td colspan=\"2\"><b>Code</b> from </td></tr><tr><td style=\"border-right-width: 0px\">AD</td><td style=\"border-left-width: 0px\">Admitting</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">ADM</td><td style=\"border-left-width: 0px\">admitter</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">AP</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">AT</td><td style=\"border-left-width: 0px\">Attending</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">ATND</td><td style=\"border-left-width: 0px\">attender</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">CLP</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">CP</td><td style=\"border-left-width: 0px\">Consulting Provider</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">CON</td><td style=\"border-left-width: 0px\">consultant</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">DP</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">EP</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">FHCP</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">IP</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">MDIR</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">OP</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">PH</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">PP</td><td style=\"border-left-width: 0px\">Primary Care Provider</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">446050000</td><td style=\"border-left-width: 0px\">PCP - Primary care physician</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">RO</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">RP</td><td style=\"border-left-width: 0px\">Referring Provider</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">REF</td><td style=\"border-left-width: 0px\">referrer</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">RT</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TR</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">PI</td><td style=\"border-left-width: 0px\">Primary Interpreter</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">translator</td><td style=\"border-left-width: 0px\">Translator</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">AI</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TN</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">VP</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">VPS</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">VTS</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        },
+        {
+          "url": "label",
+          "valueString": "Table HL70443 to V3 ParticipationType.fsh"
+        },
+        {
+          "url": "url",
+          "valueUri": "https://docs.google.com/spreadsheets/d/1Mw2am81E0fuDQ-kNrCEc-LwgZ6PlxHNauOBzZ8y5qUM/edit#gid=0"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/v2mappings/table-hl70443-to-v3-participationtype",
+  "version": "0.1.0",
+  "name": "TableHL70443toV3ParticipationType",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-21",
+  "publisher": "HL7 International, Inc",
+  "contact": [
+    {
+      "name": "HL7 Orders and Observations Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This ConceptMap represents a mapping from the HL7 V2 Table HL70443 to the FHIR V3 ParticipationType Value Set.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri": "HL70443",
+  "targetUri": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+  "group": [
+    {
+      "element": [
+        {
+          "code": "AD",
+          "display": "Admitting",
+          "target": [
+            {
+              "code": "ADM",
+              "display": "admitter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AP",
+          "display": "Administering Provider",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "AT",
+          "display": "Attending",
+          "target": [
+            {
+              "code": "ATND",
+              "display": "attender",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CLP",
+          "display": "Collecting Provider",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "CP",
+          "display": "Consulting Provider",
+          "target": [
+            {
+              "code": "CON",
+              "display": "consultant",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DP",
+          "display": "Dispensing Provider",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "EP",
+          "display": "Entering Provider",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "FHCP",
+          "display": "Family Health Care Professional",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "IP",
+          "display": "Initiating Provider (as in action by)",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "MDIR",
+          "display": "Medical Director",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "OP",
+          "display": "Ordering Provider",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "PH",
+          "display": "Pharmacist",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "PP",
+          "display": "Primary Care Provider",
+          "target": [
+            {
+              "code": "446050000",
+              "display": "PCP - Primary care physician",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RO",
+          "display": "Responsible Observer",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "RP",
+          "display": "Referring Provider",
+          "target": [
+            {
+              "code": "REF",
+              "display": "referrer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RT",
+          "display": "Referred to Provider",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "TR",
+          "display": "Transcriptionist",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "PI",
+          "display": "Primary Interpreter",
+          "target": [
+            {
+              "code": "translator",
+              "display": "Translator",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AI",
+          "display": "Assistant/Alternate Interpreter",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "TN",
+          "display": "Technician",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "VP",
+          "display": "Verifying Provider",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "VPS",
+          "display": "Verifying Pharmaceutical Supplier",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "VTS",
+          "display": "Verifying Treatment Supplier",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

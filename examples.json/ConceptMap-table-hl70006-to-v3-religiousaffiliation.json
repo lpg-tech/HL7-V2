@@ -1,0 +1,1039 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-hl70006-to-v3-religiousaffiliation",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TableHL70006toV3ReligiousAffiliation (http://hl7.org/fhir/uv/v2mappings/table-hl70006-to-v3-religiousaffiliation)</h2><p>Mapping from HL70006 to <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ReligiousAffiliation.html\">http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-21 by HL7 International, Inc (HL7 Orders and Observations Workgroup: <a href=\"http://hl7.org/Special/committees/orders/index.cfm\">http://hl7.org/Special/committ...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Table HL70006 to the FHIR V3 ReligiousAffiliation Value Set.</p>\n</div><br/><table class=\"grid\"><tr><td colspan=\"2\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Destination Concept Details</b></td></tr><tr><td colspan=\"2\"><b>Code</b> from </td><td/><td colspan=\"2\"><b>Code</b> from </td></tr><tr><td style=\"border-right-width: 0px\">A</td><td style=\"border-left-width: 0px\">Atheist</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1007</td><td style=\"border-left-width: 0px\">Atheism</td></tr><tr><td style=\"border-right-width: 0px\">B</td><td style=\"border-left-width: 0px\">Baptist</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1009</td><td style=\"border-left-width: 0px\">Baptist</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">C</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">E</td><td style=\"border-left-width: 0px\">Episcopalian</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1069</td><td style=\"border-left-width: 0px\">Episcopalian</td></tr><tr><td style=\"border-right-width: 0px\">J</td><td style=\"border-left-width: 0px\">Judaism</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1026</td><td style=\"border-left-width: 0px\">Judaism</td></tr><tr><td style=\"border-right-width: 0px\">L</td><td style=\"border-left-width: 0px\">Lutheran</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1028</td><td style=\"border-left-width: 0px\">Lutheran</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">M</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">N</td><td style=\"border-left-width: 0px\">Hindu</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1020</td><td style=\"border-left-width: 0px\">Hinduism</td></tr><tr><td style=\"border-right-width: 0px\">P</td><td style=\"border-left-width: 0px\">Protestant</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1077</td><td style=\"border-left-width: 0px\">Protestant</td></tr><tr><td style=\"border-right-width: 0px\">AGN</td><td style=\"border-left-width: 0px\">Agnostic</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1004</td><td style=\"border-left-width: 0px\">Agnosticism</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">ATH</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">BAH</td><td style=\"border-left-width: 0px\">Baha'i</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1008</td><td style=\"border-left-width: 0px\">Babi &amp; Baha'I faiths</td></tr><tr><td style=\"border-right-width: 0px\">BRE</td><td style=\"border-left-width: 0px\">Brethren</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1062</td><td style=\"border-left-width: 0px\">Brethren</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">BUD</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">BMA</td><td style=\"border-left-width: 0px\">Buddhist: Mahayana</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1029</td><td style=\"border-left-width: 0px\">Mahayana</td></tr><tr><td style=\"border-right-width: 0px\">BTH</td><td style=\"border-left-width: 0px\">Buddhist: Theravada</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1051</td><td style=\"border-left-width: 0px\">Theravada</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">BTA</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">BOT</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">CFR</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">CHR</td><td style=\"border-left-width: 0px\">Christian</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1013</td><td style=\"border-left-width: 0px\">Christian (non-Catholic, non-specific)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">ABC</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">AMT</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">AME</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">ANG</td><td style=\"border-left-width: 0px\">Christian: Anglican</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1005</td><td style=\"border-left-width: 0px\">Anglican</td></tr><tr><td style=\"border-right-width: 0px\">AOG</td><td style=\"border-left-width: 0px\">Christian: Assembly of God</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1061</td><td style=\"border-left-width: 0px\">Assembly of God</td></tr><tr><td style=\"border-right-width: 0px\">BAP</td><td style=\"border-left-width: 0px\">Christian: Baptist</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1009</td><td style=\"border-left-width: 0px\">Baptist</td></tr><tr><td style=\"border-right-width: 0px\">CRR</td><td style=\"border-left-width: 0px\">Christian: Christian Reformed</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1079</td><td style=\"border-left-width: 0px\">Reformed</td></tr><tr><td style=\"border-right-width: 0px\">CHS</td><td style=\"border-left-width: 0px\">Christian: Christian Science</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1063</td><td style=\"border-left-width: 0px\">Christian Scientist</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">CMA</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">COC</td><td style=\"border-left-width: 0px\">Christian: Church of Christ</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1064</td><td style=\"border-left-width: 0px\">Church of Christ</td></tr><tr><td style=\"border-right-width: 0px\">COG</td><td style=\"border-left-width: 0px\">Christian: Church of God</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1065</td><td style=\"border-left-width: 0px\">Church of God</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">COI</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">COM</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">COL</td><td style=\"border-left-width: 0px\">Christian: Congregational</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1066</td><td style=\"border-left-width: 0px\">Congregational</td></tr><tr><td style=\"border-right-width: 0px\">EOT</td><td style=\"border-left-width: 0px\">Christian: Eastern Orthodox</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1068</td><td style=\"border-left-width: 0px\">Eastern Orthodox</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">EVC</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">EPI</td><td style=\"border-left-width: 0px\">Christian: Episcopalian</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1069</td><td style=\"border-left-width: 0px\">Episcopalian</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">FWB</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">FRQ</td><td style=\"border-left-width: 0px\">Christian: Friends</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1071</td><td style=\"border-left-width: 0px\">Friends</td></tr><tr><td style=\"border-right-width: 0px\">FUL</td><td style=\"border-left-width: 0px\">Christian: Full Gospel</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1072</td><td style=\"border-left-width: 0px\">Full Gospel</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">GRE</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">JWN</td><td style=\"border-left-width: 0px\">Christian: Jehovah's Witness</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1025</td><td style=\"border-left-width: 0px\">Jehovah's Witnesses</td></tr><tr><td style=\"border-right-width: 0px\">MOM</td><td style=\"border-left-width: 0px\">Christian: Latter-day Saints</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1027</td><td style=\"border-left-width: 0px\">Latter Day Saints</td></tr><tr><td style=\"border-right-width: 0px\">LUT</td><td style=\"border-left-width: 0px\">Christian: Lutheran</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1028</td><td style=\"border-left-width: 0px\">Lutheran</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">LMS</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">MEN</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">MET</td><td style=\"border-left-width: 0px\">Christian: Methodist</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1073</td><td style=\"border-left-width: 0px\">Methodist</td></tr><tr><td style=\"border-right-width: 0px\">NAZ</td><td style=\"border-left-width: 0px\">Christian: Church of the Nazarene</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1075</td><td style=\"border-left-width: 0px\">Nazarene</td></tr><tr><td style=\"border-right-width: 0px\">ORT</td><td style=\"border-left-width: 0px\">Christian: Orthodox</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1036</td><td style=\"border-left-width: 0px\">Orthodox</td></tr><tr><td style=\"border-right-width: 0px\">PEN</td><td style=\"border-left-width: 0px\">Christian: Pentecostal</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1038</td><td style=\"border-left-width: 0px\">Pentecostal</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">COP</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">PRE</td><td style=\"border-left-width: 0px\">Christian: Presbyterian</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1076</td><td style=\"border-left-width: 0px\">Presbyterian</td></tr><tr><td style=\"border-right-width: 0px\">PRO</td><td style=\"border-left-width: 0px\">Christian: Protestant</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1077</td><td style=\"border-left-width: 0px\">Protestant</td></tr><tr><td style=\"border-right-width: 0px\">PRC</td><td style=\"border-left-width: 0px\">Christian: Other Protestant</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1078</td><td style=\"border-left-width: 0px\">Protestant, No Denomination</td></tr><tr><td style=\"border-right-width: 0px\">QUA</td><td style=\"border-left-width: 0px\">Christian: Friends</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1071</td><td style=\"border-left-width: 0px\">Friends</td></tr><tr><td style=\"border-right-width: 0px\">REC</td><td style=\"border-left-width: 0px\">Christian: Reformed Church</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1079</td><td style=\"border-left-width: 0px\">Reformed</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">REO</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">CAT</td><td style=\"border-left-width: 0px\">Christian: Roman Catholic</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1041</td><td style=\"border-left-width: 0px\">Roman Catholic Church</td></tr><tr><td style=\"border-right-width: 0px\">SAA</td><td style=\"border-left-width: 0px\">Christian: Salvation Army</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1080</td><td style=\"border-left-width: 0px\">Salvation Army</td></tr><tr><td style=\"border-right-width: 0px\">SEV</td><td style=\"border-left-width: 0px\">Christian: Seventh Day Adventist</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1001</td><td style=\"border-left-width: 0px\">Adventist</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">SOU</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">UCC</td><td style=\"border-left-width: 0px\">Christian: United Church of Christ</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1082</td><td style=\"border-left-width: 0px\">United Church of Christ</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">UMD</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">UNI</td><td style=\"border-left-width: 0px\">Christian: Unitarian</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1052</td><td style=\"border-left-width: 0px\">Unitarian-Universalism</td></tr><tr><td style=\"border-right-width: 0px\">UNU</td><td style=\"border-left-width: 0px\">Christian: Unitarian Universalist</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1081</td><td style=\"border-left-width: 0px\">Unitarian Universalist</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">WES</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">WMC</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">COT</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">CNF</td><td style=\"border-left-width: 0px\">Confucian</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1014</td><td style=\"border-left-width: 0px\">Confucianism</td></tr><tr><td style=\"border-right-width: 0px\">DOC</td><td style=\"border-left-width: 0px\">Disciples of Christ</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1067</td><td style=\"border-left-width: 0px\">Disciples of Christ</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">ERL</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">HIN</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">HSH</td><td style=\"border-left-width: 0px\">Hindu: Shaivites</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1020</td><td style=\"border-left-width: 0px\">Hinduism</td></tr><tr><td style=\"border-right-width: 0px\">HVA</td><td style=\"border-left-width: 0px\">Hindu: Vaishnavites</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1020</td><td style=\"border-left-width: 0px\">Hinduism</td></tr><tr><td style=\"border-right-width: 0px\">HOT</td><td style=\"border-left-width: 0px\">Hindu: Other</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1020</td><td style=\"border-left-width: 0px\">Hinduism</td></tr><tr><td style=\"border-right-width: 0px\">JAI</td><td style=\"border-left-width: 0px\">Jain</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1024</td><td style=\"border-left-width: 0px\">Jainism</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">JEW</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">JCO</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">JOR</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">JRC</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">JRF</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">JRN</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">JOT</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">MOS</td><td style=\"border-left-width: 0px\">Muslim</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1023</td><td style=\"border-left-width: 0px\">Islam</td></tr><tr><td style=\"border-right-width: 0px\">MSH</td><td style=\"border-left-width: 0px\">Muslim: Shiite</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1045</td><td style=\"border-left-width: 0px\">Shiite (Islam)</td></tr><tr><td style=\"border-right-width: 0px\">MSU</td><td style=\"border-left-width: 0px\">Muslim: Sunni</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1049</td><td style=\"border-left-width: 0px\">Sunni (Islam)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">MOT</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">NAM</td><td style=\"border-left-width: 0px\">Native American</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1074</td><td style=\"border-left-width: 0px\">Native American</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">NRL</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">NOE</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">SHN</td><td style=\"border-left-width: 0px\">Shintoist</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1046</td><td style=\"border-left-width: 0px\">Shinto</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">SIK</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">SPI</td><td style=\"border-left-width: 0px\">Spiritist</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1048</td><td style=\"border-left-width: 0px\">Spiritualism</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">OTH</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">VAR</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        },
+        {
+          "url": "label",
+          "valueString": "Table HL70006 to V3 ReligiousAffiliation.fsh"
+        },
+        {
+          "url": "url",
+          "valueUri": "https://docs.google.com/spreadsheets/d/1y4Y1YDT48qL5Rqdob7hoyghJx70ks0qp68-hcOrdgcs/edit#gid=0"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/v2mappings/table-hl70006-to-v3-religiousaffiliation",
+  "version": "0.1.0",
+  "name": "TableHL70006toV3ReligiousAffiliation",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-21",
+  "publisher": "HL7 International, Inc",
+  "contact": [
+    {
+      "name": "HL7 Orders and Observations Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This ConceptMap represents a mapping from the HL7 V2 Table HL70006 to the FHIR V3 ReligiousAffiliation Value Set.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri": "HL70006",
+  "targetUri": "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
+  "group": [
+    {
+      "element": [
+        {
+          "code": "A",
+          "display": "Atheist",
+          "target": [
+            {
+              "code": "1007",
+              "display": "Atheism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "B",
+          "display": "Baptist",
+          "target": [
+            {
+              "code": "1009",
+              "display": "Baptist",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "C",
+          "display": "Catholic",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "E",
+          "display": "Episcopalian",
+          "target": [
+            {
+              "code": "1069",
+              "display": "Episcopalian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "J",
+          "display": "Judaism",
+          "target": [
+            {
+              "code": "1026",
+              "display": "Judaism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "L",
+          "display": "Lutheran",
+          "target": [
+            {
+              "code": "1028",
+              "display": "Lutheran",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "M",
+          "display": "Church of Latter Day Saints (Mormon)",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "N",
+          "display": "Hindu",
+          "target": [
+            {
+              "code": "1020",
+              "display": "Hinduism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "P",
+          "display": "Protestant",
+          "target": [
+            {
+              "code": "1077",
+              "display": "Protestant",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AGN",
+          "display": "Agnostic",
+          "target": [
+            {
+              "code": "1004",
+              "display": "Agnosticism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ATH",
+          "display": "Atheist",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "BAH",
+          "display": "Baha'i",
+          "target": [
+            {
+              "code": "1008",
+              "display": "Babi & Baha'I faiths",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BRE",
+          "display": "Brethren",
+          "target": [
+            {
+              "code": "1062",
+              "display": "Brethren",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BUD",
+          "display": "Buddhist",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "BMA",
+          "display": "Buddhist: Mahayana",
+          "target": [
+            {
+              "code": "1029",
+              "display": "Mahayana",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BTH",
+          "display": "Buddhist: Theravada",
+          "target": [
+            {
+              "code": "1051",
+              "display": "Theravada",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BTA",
+          "display": "Buddhist: Tantrayana",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "BOT",
+          "display": "Buddhist: Other",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "CFR",
+          "display": "Chinese Folk Religionist",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "CHR",
+          "display": "Christian",
+          "target": [
+            {
+              "code": "1013",
+              "display": "Christian (non-Catholic, non-specific)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ABC",
+          "display": "Christian: American Baptist Church",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "AMT",
+          "display": "Christian: African Methodist Episcopal",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "AME",
+          "display": "Christian: African Methodist Episcopal Zion",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "ANG",
+          "display": "Christian: Anglican",
+          "target": [
+            {
+              "code": "1005",
+              "display": "Anglican",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AOG",
+          "display": "Christian: Assembly of God",
+          "target": [
+            {
+              "code": "1061",
+              "display": "Assembly of God",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BAP",
+          "display": "Christian: Baptist",
+          "target": [
+            {
+              "code": "1009",
+              "display": "Baptist",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CRR",
+          "display": "Christian: Christian Reformed",
+          "target": [
+            {
+              "code": "1079",
+              "display": "Reformed",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CHS",
+          "display": "Christian: Christian Science",
+          "target": [
+            {
+              "code": "1063",
+              "display": "Christian Scientist",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CMA",
+          "display": "Christian: Christian Missionary Alliance",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "COC",
+          "display": "Christian: Church of Christ",
+          "target": [
+            {
+              "code": "1064",
+              "display": "Church of Christ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "COG",
+          "display": "Christian: Church of God",
+          "target": [
+            {
+              "code": "1065",
+              "display": "Church of God",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "COI",
+          "display": "Christian: Church of God in Christ",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "COM",
+          "display": "Christian: Community",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "COL",
+          "display": "Christian: Congregational",
+          "target": [
+            {
+              "code": "1066",
+              "display": "Congregational",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "EOT",
+          "display": "Christian: Eastern Orthodox",
+          "target": [
+            {
+              "code": "1068",
+              "display": "Eastern Orthodox",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "EVC",
+          "display": "Christian: Evangelical Church",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "EPI",
+          "display": "Christian: Episcopalian",
+          "target": [
+            {
+              "code": "1069",
+              "display": "Episcopalian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FWB",
+          "display": "Christian: Free Will Baptist",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "FRQ",
+          "display": "Christian: Friends",
+          "target": [
+            {
+              "code": "1071",
+              "display": "Friends",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FUL",
+          "display": "Christian: Full Gospel",
+          "target": [
+            {
+              "code": "1072",
+              "display": "Full Gospel",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GRE",
+          "display": "Christian: Greek Orthodox",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "JWN",
+          "display": "Christian: Jehovah's Witness",
+          "target": [
+            {
+              "code": "1025",
+              "display": "Jehovah's Witnesses",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MOM",
+          "display": "Christian: Latter-day Saints",
+          "target": [
+            {
+              "code": "1027",
+              "display": "Latter Day Saints",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "LUT",
+          "display": "Christian: Lutheran",
+          "target": [
+            {
+              "code": "1028",
+              "display": "Lutheran",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "LMS",
+          "display": "Christian: Lutheran Missouri Synod",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "MEN",
+          "display": "Christian: Mennonite",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "MET",
+          "display": "Christian: Methodist",
+          "target": [
+            {
+              "code": "1073",
+              "display": "Methodist",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NAZ",
+          "display": "Christian: Church of the Nazarene",
+          "target": [
+            {
+              "code": "1075",
+              "display": "Nazarene",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ORT",
+          "display": "Christian: Orthodox",
+          "target": [
+            {
+              "code": "1036",
+              "display": "Orthodox",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PEN",
+          "display": "Christian: Pentecostal",
+          "target": [
+            {
+              "code": "1038",
+              "display": "Pentecostal",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "COP",
+          "display": "Christian: Other Pentecostal",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "PRE",
+          "display": "Christian: Presbyterian",
+          "target": [
+            {
+              "code": "1076",
+              "display": "Presbyterian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRO",
+          "display": "Christian: Protestant",
+          "target": [
+            {
+              "code": "1077",
+              "display": "Protestant",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRC",
+          "display": "Christian: Other Protestant",
+          "target": [
+            {
+              "code": "1078",
+              "display": "Protestant, No Denomination",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "QUA",
+          "display": "Christian: Friends",
+          "target": [
+            {
+              "code": "1071",
+              "display": "Friends",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "REC",
+          "display": "Christian: Reformed Church",
+          "target": [
+            {
+              "code": "1079",
+              "display": "Reformed",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "REO",
+          "display": "Christian: Reorganized Church of Jesus Christ-LDS",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "CAT",
+          "display": "Christian: Roman Catholic",
+          "target": [
+            {
+              "code": "1041",
+              "display": "Roman Catholic Church",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SAA",
+          "display": "Christian: Salvation Army",
+          "target": [
+            {
+              "code": "1080",
+              "display": "Salvation Army",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SEV",
+          "display": "Christian: Seventh Day Adventist",
+          "target": [
+            {
+              "code": "1001",
+              "display": "Adventist",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SOU",
+          "display": "Christian: Southern Baptist",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "UCC",
+          "display": "Christian: United Church of Christ",
+          "target": [
+            {
+              "code": "1082",
+              "display": "United Church of Christ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "UMD",
+          "display": "Christian: United Methodist",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "UNI",
+          "display": "Christian: Unitarian",
+          "target": [
+            {
+              "code": "1052",
+              "display": "Unitarian-Universalism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "UNU",
+          "display": "Christian: Unitarian Universalist",
+          "target": [
+            {
+              "code": "1081",
+              "display": "Unitarian Universalist",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "WES",
+          "display": "Christian: Wesleyan",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "WMC",
+          "display": "Christian: Wesleyan Methodist",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "COT",
+          "display": "Christian: Other",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "CNF",
+          "display": "Confucian",
+          "target": [
+            {
+              "code": "1014",
+              "display": "Confucianism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DOC",
+          "display": "Disciples of Christ",
+          "target": [
+            {
+              "code": "1067",
+              "display": "Disciples of Christ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ERL",
+          "display": "Ethnic Religionist",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "HIN",
+          "display": "Hindu",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "HSH",
+          "display": "Hindu: Shaivites",
+          "target": [
+            {
+              "code": "1020",
+              "display": "Hinduism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HVA",
+          "display": "Hindu: Vaishnavites",
+          "target": [
+            {
+              "code": "1020",
+              "display": "Hinduism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HOT",
+          "display": "Hindu: Other",
+          "target": [
+            {
+              "code": "1020",
+              "display": "Hinduism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "JAI",
+          "display": "Jain",
+          "target": [
+            {
+              "code": "1024",
+              "display": "Jainism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "JEW",
+          "display": "Jewish",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "JCO",
+          "display": "Jewish: Conservative",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "JOR",
+          "display": "Jewish: Orthodox",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "JRC",
+          "display": "Jewish: Reconstructionist",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "JRF",
+          "display": "Jewish: Reform",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "JRN",
+          "display": "Jewish: Renewal",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "JOT",
+          "display": "Jewish: Other",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "MOS",
+          "display": "Muslim",
+          "target": [
+            {
+              "code": "1023",
+              "display": "Islam",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MSH",
+          "display": "Muslim: Shiite",
+          "target": [
+            {
+              "code": "1045",
+              "display": "Shiite (Islam)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MSU",
+          "display": "Muslim: Sunni",
+          "target": [
+            {
+              "code": "1049",
+              "display": "Sunni (Islam)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MOT",
+          "display": "Muslim: Other",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "NAM",
+          "display": "Native American",
+          "target": [
+            {
+              "code": "1074",
+              "display": "Native American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NRL",
+          "display": "New Religionist",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "NOE",
+          "display": "Nonreligious",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "SHN",
+          "display": "Shintoist",
+          "target": [
+            {
+              "code": "1046",
+              "display": "Shinto",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SIK",
+          "display": "Sikh",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "SPI",
+          "display": "Spiritist",
+          "target": [
+            {
+              "code": "1048",
+              "display": "Spiritualism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OTH",
+          "display": "Other",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "VAR",
+          "display": "Unknown",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

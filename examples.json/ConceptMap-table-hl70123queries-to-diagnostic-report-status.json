@@ -1,0 +1,191 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "table-hl70123queries-to-diagnostic-report-status",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TableHL70123QueriestoDiagnosticReportStatus (http://hl7.org/fhir/uv/v2mappings/table-hl70123queries-to-diagnostic-report-status)</h2><p>Mapping from HL70123 to <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html\">http://hl7.org/fhir/diagnostic-report-status</a></p><p>ACTIVE (not intended for production usage). Published on 2022-02-21 by HL7 International, Inc (HL7 Orders and Observations Workgroup: <a href=\"http://hl7.org/Special/committees/orders/index.cfm\">http://hl7.org/Special/committ...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Table HL70123 to the FHIR Diagnostic Report Status Value Set.</p>\n</div><br/><table class=\"grid\"><tr><td colspan=\"2\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Destination Concept Details</b></td></tr><tr><td colspan=\"2\"><b>Code</b> from </td><td/><td colspan=\"2\"><b>Code</b> from </td></tr><tr><td style=\"border-right-width: 0px\">O</td><td style=\"border-left-width: 0px\">Order received; specimen not yet received</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">registered</td><td style=\"border-left-width: 0px\">Registered</td></tr><tr><td style=\"border-right-width: 0px\">I</td><td style=\"border-left-width: 0px\">No results available; specimen received, procedure incomplete</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">registered</td><td style=\"border-left-width: 0px\">Registered</td></tr><tr><td style=\"border-right-width: 0px\">S</td><td style=\"border-left-width: 0px\">No results available; procedure scheduled,but not done</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">registered</td><td style=\"border-left-width: 0px\">Registered</td></tr><tr><td style=\"border-right-width: 0px\">A</td><td style=\"border-left-width: 0px\">Some, but not all, results available</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">partial</td><td style=\"border-left-width: 0px\">Partial</td></tr><tr><td style=\"border-right-width: 0px\">P</td><td style=\"border-left-width: 0px\">Preliminary: A verified early result is available, final results not yet obtained</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">preliminary</td><td style=\"border-left-width: 0px\">Preliminary</td></tr><tr><td style=\"border-right-width: 0px\">C</td><td style=\"border-left-width: 0px\">Correction to results</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">corrected</td><td style=\"border-left-width: 0px\">Corrected</td></tr><tr><td style=\"border-right-width: 0px\">R</td><td style=\"border-left-width: 0px\">Results stored; not yet verified</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">partial</td><td style=\"border-left-width: 0px\">Partial</td></tr><tr><td style=\"border-right-width: 0px\">F</td><td style=\"border-left-width: 0px\">Final results; results stored and verified.Can only be changed with a corrected result.</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">final</td><td style=\"border-left-width: 0px\">Final</td></tr><tr><td style=\"border-right-width: 0px\">X</td><td style=\"border-left-width: 0px\">No results available; Order canceled.</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">cancelled</td><td style=\"border-left-width: 0px\">Cancelled</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">Y</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">Z</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCode": "derived-from"
+        },
+        {
+          "url": "label",
+          "valueString": "Table HL70123[Queries] to Diagnostic Report Status.fsh"
+        },
+        {
+          "url": "url",
+          "valueUri": "https://docs.google.com/spreadsheets/d/1PZzztfsx_yRfvrl3i9on8Tc-yXZCzbK1wnVgts-SxSQ/edit#gid=0"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/v2mappings/table-hl70123queries-to-diagnostic-report-status",
+  "version": "0.1.0",
+  "name": "TableHL70123QueriestoDiagnosticReportStatus",
+  "status": "active",
+  "experimental": true,
+  "date": "2022-02-21",
+  "publisher": "HL7 International, Inc",
+  "contact": [
+    {
+      "name": "HL7 Orders and Observations Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/orders/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This ConceptMap represents a mapping from the HL7 V2 Table HL70123 to the FHIR Diagnostic Report Status Value Set.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri": "HL70123",
+  "targetUri": "http://hl7.org/fhir/diagnostic-report-status",
+  "group": [
+    {
+      "element": [
+        {
+          "code": "O",
+          "display": "Order received; specimen not yet received",
+          "target": [
+            {
+              "code": "registered",
+              "display": "Registered",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "I",
+          "display": "No results available; specimen received, procedure incomplete",
+          "target": [
+            {
+              "code": "registered",
+              "display": "Registered",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "S",
+          "display": "No results available; procedure scheduled,but not done",
+          "target": [
+            {
+              "code": "registered",
+              "display": "Registered",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A",
+          "display": "Some, but not all, results available",
+          "target": [
+            {
+              "code": "partial",
+              "display": "Partial",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "P",
+          "display": "Preliminary: A verified early result is available, final results not yet obtained",
+          "target": [
+            {
+              "code": "preliminary",
+              "display": "Preliminary",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "C",
+          "display": "Correction to results",
+          "target": [
+            {
+              "code": "corrected",
+              "display": "Corrected",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R",
+          "display": "Results stored; not yet verified",
+          "target": [
+            {
+              "code": "partial",
+              "display": "Partial",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "F",
+          "display": "Final results; results stored and verified.Can only be changed with a corrected result.",
+          "target": [
+            {
+              "code": "final",
+              "display": "Final",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "X",
+          "display": "No results available; Order canceled.",
+          "target": [
+            {
+              "code": "cancelled",
+              "display": "Cancelled",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Y",
+          "display": "No order on record for this test.(Used only on queries)",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        },
+        {
+          "code": "Z",
+          "display": "No record of this patient. (Used only on queries)",
+          "target": [
+            {
+              "equivalence": "unmatched"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
