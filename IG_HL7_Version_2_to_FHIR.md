@@ -42,3 +42,27 @@ Message Maps werden auf wiederverwendbare Segment Maps verweisen, die für das M
 * Beachten Sie, dass nicht alle Elemente (weder in V2 noch in FHIR) vorgeschlagene oder erforderliche Wertesätze bereitstellen, so dass es nicht immer möglich ist, ein Vokabular-Mapping zu erstellen.
 * Wenn eine V2-Tabelle verfügbar ist und der FHIR-Wertesatz nicht angegeben ist, können die V2-Codes im FHIR-Element verwendet werden.
 * Innerhalb einer Abbildung kann es vorkommen, dass eine Untergruppe von v2-Codes keinen entsprechenden Code im FHIR-Wertesatz hat. Lokale Implementierungen müssen für diese Fälle eine Strategie entwickeln, bis die UTG den paradigmenübergreifenden Abgleich abgeschlossen hat.
+
+## Mapping Guidelines
+
+Die Zuordnungen für diese Ballotrunde werden in einem Tabellenkalkulationsformat dokumentiert und veröffentlicht. Dieses Format ermöglicht eine einfache, nebeneinander liegende Bearbeitung und Überprüfung von Von=Bis-Mappings mit unterstützenden Informationen. Gleichzeitig muss der Inhalt berechenbar sein, damit eine Mapping-Engine die Mappings aufnehmen kann, um ihre Basis-Mappings für eine spätere Verfeinerung zu füllen.
+
+Zu diesem Zweck basiert die Infrastruktur auf einer Reihe von FHIR-ConceptMap-Profilen zur Erfassung der relevanten Daten für Nachrichtenstruktur-, Segment-, Datentyp- und Vokabular-Mappings. Bis Werkzeuge zur direkten Bearbeitung der ConceptMaps verfügbar sind, werden Google Spreadsheets zur Erfassung der Mappings verwendet und die ConceptMaps in regelmäßigen Abständen in gitHub eingepflegt. Unabhängig von den verwendeten Tools bezeichnen wir die Mappings als Mapping Spreadsheets, da das angezeigte Format das einer Tabellenkalkulation sein wird.
+
+Im Folgenden finden Sie einen Überblick über die verschiedenen Arten von Tabellenkalkulationen, in denen das Mapping und die unterstützenden Informationen erfasst werden.
+
+### Mapping Tabellen
+
+Das Mapping wird mithilfe von CSV-Dateien erstellt. Das Format der Mapping-Dateien variiert je nachdem, ob es sich bei dem zuzuordnenden V2-Artefakt um eine Nachricht, ein Segment, einen Datentyp oder eine Tabelle handelt.
+
+Unabhängig vom Mapping-Tabellenblatt ist das Tabellenblatt in drei Abschnitte unterteilt:
+
+* HL7 v2
+  * Die v2-Elemente, die abgebildet werden.
+
+* Bedingungen
+  * Die Bedingung(en), falls vorhanden, die bestimmen, ob das v2-Element abgebildet wird.
+    * Wenn es keine Bedingung gibt, muss das Mapping immer angewendet werden.
+
+* HL7 FHIR
+  * Das FHIR-Element, auf das das v2-Element abgebildet wird.
