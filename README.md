@@ -24,6 +24,8 @@ comes here
 
 [Message ADT_A08 to Bundle.fsh](https://github.com/HL7/v2-to-fhir/blob/master/input/fsh/Message%20ADT_A08%20to%20Bundle.fsh)
 
+[HL7Messages spreadsheets](https://docs.google.com/spreadsheets/d/10l9wnuBkQPqoYf1XXzyfgF11a1UlamNWqUnapC0hsOY)
+
 ### Milestones
 
 * Begin 15. November 2022, Github Repo, docx Template
