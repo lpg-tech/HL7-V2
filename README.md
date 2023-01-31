@@ -40,10 +40,20 @@ comes here
 
 * Completed 1 June 2023
 
-video call was 29 November 2022 at 9:30
+video call 29 November 2022 at 9:30
 
-video call was 13 December 2022 at 9:30
+video call 13 December 2022 at 9:30
 
-next video call 3 January 2023 at 9:30
+video call 3 January 2023 at 9:30
 
-next video call 17 January 2023 at 9:30
+video call 17 January 2023 at 9:30
+
+next video call 31 January 2023 at 15:00
+
+video call 14 February 2023 at 9:30
+
+video call 28 February 2023 at 9:30
+
+video call 14 March 2023 at 9:30
+
+video call 28 March 2023 at 9:30
