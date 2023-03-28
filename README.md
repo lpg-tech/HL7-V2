@@ -2,6 +2,8 @@
 
 [HL7 Patientenschnittstelle V2.9](https://github.com/lpg-tech/HL7-V2/blob/main/HL7%20Patientenschnittstelle%20V2.9_CH_Draft.docx)
 
+[Modification Proposals](https://github.com/lpg-tech/HL7-V2/issues/1)
+
 ## Managment Summary
 
 Since the publication of the standard for version 2.4 in 2011, both the requirements for uniform content use in Switzerland and the legal requirements in the healthcare sector have changed significantly. With the introduction of the EPD, it must be possible to distribute the documentation of consent and data protection criteria across all systems in the hospital, and a revision of the "gender status" is currently necessary, even though this has not yet been required in Switzerland for data transmission in the hospital. For these reasons, this publication is based on the latest version of HL7 v2.9.1.
