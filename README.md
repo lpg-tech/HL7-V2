@@ -44,9 +44,11 @@ comes here
 
 * 3 January 2023: Further Improvement Managment summary. Create CSV Spreadsheet
 
-* 17 Janary 2023
+* 17 January 2023
 
 * 29 March 2023 Ready for consultation process
+
+* 17 May 2023 at 14:00 video conference to discuss proposed modifications
 
 * Completed 1 June 2023
 
