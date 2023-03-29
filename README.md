@@ -4,6 +4,11 @@
 
 [Modification Proposals](https://github.com/lpg-tech/HL7-V2/issues/1)
 
+Note: There will be a Video Conference to discuss the modification proposals:
+May 17 2023 at 14:00, so save the date if you are interested
+May 17 2023 at 14:00, so save the date if you are interested
+Invitations for Google Meet Conference will be sent.
+
 ## Managment Summary
 
 Since the publication of the standard for version 2.4 in 2011, both the requirements for uniform content use in Switzerland and the legal requirements in the healthcare sector have changed significantly. With the introduction of the EPD, it must be possible to distribute the documentation of consent and data protection criteria across all systems in the hospital, and a revision of the "gender status" is currently necessary, even though this has not yet been required in Switzerland for data transmission in the hospital. For these reasons, this publication is based on the latest version of HL7 v2.9.1.
