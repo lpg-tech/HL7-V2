@@ -6,7 +6,7 @@
 
 **Note:** There will be a Video Conference to discuss the modification proposals:
 
-**May 17 2023 at 14:00**, so save the date if you are interested
+**May 31 2023 at 14:00**, May 17 2023 is cancelled
 
 Invitations for Google Meet Conference will be sent.
 
