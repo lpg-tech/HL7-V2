@@ -8,7 +8,7 @@
 
 **May 31 2023 at 14:00**, May 17 2023 is cancelled
 
-Invitations for Google Meet Conference will be sent.
+Invitations for Google Meet Conference will be sent, just write an email to info@hl7.ch .
 
 ## Managment Summary
 
