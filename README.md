@@ -1,6 +1,6 @@
 # HL7 Patientenschnittstelle V2.9
 
-[HL7 Patientenschnittstelle V2.9](https://github.com/lpg-tech/HL7-V2/blob/main/HL7%20Patientenschnittstelle%20V2.9_CH_Draft.docx)
+[HL7 Patientenschnittstelle V2.9](https://github.com/lpg-tech/HL7-V2/blob/main/HL7%20Patientenschnittstelle%20V2.9_CH_final.docx)
 
 [Modification Proposals](https://github.com/lpg-tech/HL7-V2/issues/1)
 
